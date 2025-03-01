@@ -5,8 +5,17 @@ module.exports = {
     darkMode: 'class',
     theme: {
         fontFamily: {
-            sans: ['Inter', ...defaultTheme.fontFamily.sans],
-            serif: ['Newsreader', ...defaultTheme.fontFamily.serif]
+            sans: [
+                '-apple-system', 'system-ui', 'BlinkMacSystemFont',
+                'Segoe UI', 'Helvetica', 'Arial', 'sans-serif',
+                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+                'Inter', ...defaultTheme.fontFamily.sans
+            ],
+            serif: [
+                'Newsreader', 'Georgia', 'Times New Roman', 'serif',
+                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+                ...defaultTheme.fontFamily.serif
+            ]
         },
         extend: {
             textColor: {

@@ -8,13 +8,16 @@ module.exports = {
             sans: [
                 '-apple-system', 'system-ui', 'BlinkMacSystemFont',
                 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif',
-                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-                'Inter', ...defaultTheme.fontFamily.sans
+                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
             ],
             serif: [
-                'Newsreader', 'Georgia', 'Times New Roman', 'serif',
-                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-                ...defaultTheme.fontFamily.serif
+                '-apple-system', 'system-ui', 'BlinkMacSystemFont',
+                'Segoe UI', 'Helvetica', 'Arial', 'sans-serif',
+                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
+            ],
+            mono: [
+                'Menlo', 'Monaco', 'Consolas', 'Courier New', 'monospace',
+                'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
             ]
         },
         extend: {

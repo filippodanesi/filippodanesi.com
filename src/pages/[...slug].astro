@@ -24,7 +24,7 @@ const { Content } = await page.render();
 <BaseLayout title={seo?.title ?? title} description={seo?.description} image={seo?.image} showHeader={false}>
     <article class="mb-16 sm:mb-24">
         <header class="mb-8">
-            <h1 class="text-4xl leading-tight font-serif sm:text-5xl text-medium mb-4 sm:leading-tight">{title}</h1>
+            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-4xl sm:leading-tight mb-4 text-main">{title}</h1>
             {
                 seo?.description && page.slug !== 'home' && (
                     <h2 class="mb-12 text-main sm:mb-14 text-sm sm:text-base leading-normal pb-6 border-b border-solid border-main w-full">

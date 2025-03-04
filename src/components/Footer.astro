@@ -1,5 +1,5 @@
 ---
-import siteConfig from '../data/site-config';
+import siteConfig from '@/data/site-config';
 
 const currentYear = new Date().getFullYear();
 
@@ -14,26 +14,26 @@ const socialIcons: Record<SocialNetwork, string> = {
 };
 ---
 
-<footer class="w-full max-w-3xl mx-auto pt-12 pb-10 sm:pt-24 sm:pb-14">
+<footer class="w-full max-w-3xl mx-auto pt-12 pb-10 sm:pt-20 sm:pb-12">
     {/* Legal Section */}
     <div class="flex flex-col gap-2 mb-8">
-        <h3 class="font-sans font-medium text-sm mb-1">Legal</h3>
-        <div class="flex flex-col gap-2">
-            <a class="font-serif hover:underline hover:underline-offset-2" href="/privacy-policy/">Privacy</a>
-            <a class="font-serif hover:underline hover:underline-offset-2" href="/cookie-policy/">Cookie</a>
+        <h3 class="font-sans font-medium text-sm mb-1.5">Legal</h3>
+        <div class="flex gap-6">
+            <a class="font-serif text-sm hover:underline hover:underline-offset-2 transition-all duration-200" href="/privacy-policy/">Privacy</a>
+            <a class="font-serif text-sm hover:underline hover:underline-offset-2 transition-all duration-200" href="/cookie-policy/">Cookie</a>
         </div>
     </div>
 
     {/* Divider */}
-    <div class="border-t border-solid border-main mb-8"></div>
+    <div class="border-t border-solid border-main mb-6"></div>
 
     {/* Footer Bottom Section */}
     <div class="flex justify-between items-center">
         {/* Copyright */}
-        <span class="text-sm">&copy;{currentYear} {siteConfig.title}</span>
+        <span class="text-sm opacity-90">&copy;{currentYear} {siteConfig.title}</span>
 
         {/* Social Icons - Right aligned on both mobile and desktop */}
-        <div class="flex justify-end gap-6">
+        <div class="flex justify-end gap-5">
             {siteConfig.socialLinks?.map((link) => (
                 <a 
                     href={link.href}
@@ -52,6 +52,7 @@ const socialIcons: Record<SocialNetwork, string> = {
 <style>
     .social-icon {
         fill: currentColor;
+        transition: opacity 0.15s ease-in-out;
     }
 
     .social-icon:hover {

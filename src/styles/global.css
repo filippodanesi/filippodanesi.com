@@ -37,8 +37,9 @@
         border-left: 4px solid rgb(var(--color-border-main) / 0.6) !important;
         padding-left: 1rem !important;
         margin-left: 0 !important;
-        @apply text-base rgb(var(--color-text-main) / 0.6);
-    }
+        color: rgb(var(--color-text-main) / 0.6);
+        @apply text-base;
+    }    
     
     /* Image styles */
     .prose img {

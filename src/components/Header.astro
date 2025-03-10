@@ -9,11 +9,9 @@ import siteConfig from '../data/site-config';
                 <img src={siteConfig.logo.src} alt={siteConfig.logo.alt || ''} class="max-h-12" />
             </a>
         ) : (
-            <h1>
-                <span class="text-3xl leading-tight font-serif font-medium sm:text-4xl sm:leading-tight mb-4 text-main">
-                    {siteConfig.title}
-                </span>
-            </h1>
+              <h1 class="text-3xl leading-tight font-serif font-medium sm:text-4xl sm:leading-tight mb-4 text-main">
+                {siteConfig.title}
+              </h1>
         )
     }
     <h2 class="text-sm sm:text-base text-main mt-2">

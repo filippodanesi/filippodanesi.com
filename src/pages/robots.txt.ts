@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 
 const getRobotsTxt = (sitemapURL: URL) => `
+# Block AI Training and Content Scraping Bots
 User-agent: Amazonbot
 User-agent: Anthropic-ai
 User-agent: Applebot-Extended
@@ -26,13 +27,28 @@ User-agent: PerplexityBot
 User-agent: YouBot
 Disallow: /
 
+# Allow Search Engine Crawlers
 User-agent: *
 Allow: /
 
+# Block System and Technical URLs
+Disallow: /cdn-cgi/
+
+# Sitemaps
 Sitemap: ${sitemapURL.href}
 `;
 
 export const GET: APIRoute = ({ site }) => {
+    if (!site) {
+        return new Response('Site URL not configured', { status: 500 });
+    }
+    
     const sitemapURL = new URL('sitemap-index.xml', site);
-    return new Response(getRobotsTxt(sitemapURL));
+    
+    return new Response(getRobotsTxt(sitemapURL), {
+        headers: {
+            'Content-Type': 'text/plain',
+            'Cache-Control': 'public, max-age=3600'
+        }
+    });
 };

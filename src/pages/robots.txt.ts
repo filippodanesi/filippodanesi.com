@@ -1,7 +1,19 @@
 import type { APIRoute } from 'astro';
 
-const getRobotsTxt = (sitemapURL: URL) => `
-# Allow AI bots that offer visibility
+const getRobotsTxt = (sitemapURL: URL) => `# ===================================
+# Robot Access Policy
+# Last updated: ${new Date().toISOString().split('T')[0]}
+# ===================================
+
+# Default: Allow all legitimate crawlers
+User-agent: *
+Allow: /
+
+# ===================================
+# ALLOWED BOTS
+# ===================================
+
+# AI Search & Answer Engines
 User-agent: GPTBot
 Allow: /
 
@@ -11,7 +23,11 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Block other AI training and scraping bots
+# ===================================
+# BLOCKED BOTS
+# ===================================
+
+# AI Scrapers & Non-Transparent Bots
 User-agent: Amazonbot
 User-agent: Anthropic-ai
 User-agent: Applebot-Extended
@@ -20,8 +36,8 @@ User-agent: AwarioSmartBot
 User-agent: Bytespider
 User-agent: CCBot
 User-agent: ChatGPT-User
-User-agent: ClaudeBot
 User-agent: Claude-Web
+User-agent: ClaudeBot
 User-agent: Cohere-ai
 User-agent: DataForSeoBot
 User-agent: FacebookBot
@@ -34,16 +50,18 @@ User-agent: Peer39_crawler/1.0
 User-agent: YouBot
 Disallow: /
 
-# Allow search engine crawlers
-User-agent: *
-Allow: /
+# ===================================
+# RESTRICTED PATHS
+# ===================================
 
-# Block system and technical URLs
+# Block access to system endpoints
 Disallow: /cdn-cgi/
 
-# Sitemaps
-Sitemap: ${sitemapURL.href}
-`;
+# ===================================
+# SITEMAPS
+# ===================================
+
+Sitemap: ${sitemapURL.href}`;
 
 export const GET: APIRoute = ({ site }) => {
   if (!site) {

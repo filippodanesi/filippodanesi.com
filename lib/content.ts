@@ -37,8 +37,8 @@ export interface OpenSourceItem extends ResumeItem {
 export const intro: Intro = {
   name: "Filippo Danesi",
   about:
-    "With six years across markets, I’m an SEO specialist fusing data and AI to unlock search growth and seamless journeys. Passionate about the overlap of code, content and insight, I turn analytics into strategies that drive measurable results.",
-  href: "https://www.filippodanesi.com",
+    "With six years across markets, I'm an SEO specialist fusing data and AI to unlock search growth and seamless journeys. Passionate about the overlap of code, content and insight, I turn analytics into strategies that drive measurable results.",
+  href: "https://www.serp-secrets.com",
   github: "https://github.com/filippodanesi",
   linkedin: "https://linkedin.com/in/filippodanesi",
   email: "hello@filippodanesi.com",
@@ -46,150 +46,133 @@ export const intro: Intro = {
 
 export const work: ResumeItem[] = [
   {
-    title: "Design Engineer at Ampry",
-    href: "https://ampry.com",
-    date: "2023 to Present",
-    location: "Pleasant Grove, UT",
+    title: "Content Manager, SEO at Triumph",
+    href: "https://www.triumph.com",
+    date: "2025 to Present",
+    location: "Zürich, CH",
     description: [
-      "Lead product engineering initiatives and design system architecture",
-      "Drive technical implementation of component libraries",
-      "Manage end-to-end product development workflows",
+      "Managed and optimized content for international websites in 15+ markets",
+      "Developed global content governance and editorial guidelines",
+      "Implemented NLP and NLU technologies for advanced SEO strategies"
     ],
   },
   {
-    title: "Design Engineer at 9d8",
-    href: "https://9d8.dev",
-    date: "2021 to Present",
-    location: "Remote",
+    title: "SEO Specialist (Tech Lead) at NUR",
+    href: "https://www.nur.it/en/",
+    date: "2022 to 2025",
+    location: "Mantova, IT",
     description: [
-      "Design and develop AI-powered solutions for marketing and sales teams",
-      "Create scalable systems that enhance client workflow efficiency",
-      "Implement cutting-edge AI technologies in user-friendly interfaces",
+      "Led technical and content SEO audits for enterprise clients",
+      "Developed strategies that increased organic traffic and conversions",
+      "Drove R&D in AI-SEO and machine learning for optimization"
     ],
   },
   {
-    title: "Creative Developer at Tackle",
-    href: "https://tackle.io",
-    date: "2022 to 2023",
-    location: "Remote",
-    description: [
-      "Led development of design systems and technical architecture",
-      "Improved site performance metrics while scaling development workflows",
-      "Implemented automated testing and deployment processes",
-    ],
-  },
-  {
-    title: "Founding Designer at Ampry",
-    href: "https://ampry.com",
+    title: "SEO Specialist at Tesecom",
+    href: "https://www.tesecom.it/",
     date: "2020 to 2022",
-    location: "Pleasant Grove, UT",
+    location: "Pisa, IT",
     description: [
-      "Built scalable design systems for CRO tech startup from ground up",
-      "Developed and implemented conversion optimization strategies",
-      "Assisted in significant conversion improvements across 200+ clients",
+      "Created and optimized content strategies based on analysis and research",
+      "Delivered performance reports and actionable insights to clients",
+      "Collaborated with PPC team for integrated organic and paid strategies"
     ],
   },
   {
-    title: "Designer at Zion",
-    href: "https://zion.surf",
-    date: "2018 to 2022",
-    location: "Lehi, UT",
+    title: "SEO Specialist at Brand-On",
+    href: "https://www.brand-on.it/",
+    date: "2019 to 2020",
+    location: "Pisa, IT",
     description: [
-      "Collaborated with 100+ brands and marketing agencies",
-      "Created cohesive visual narratives across multiple platforms",
-      "Mediums include brand, web, social, product, and publication design",
+      "Specialized in eCommerce SEO and site architecture optimization",
+      "Executed on-page and off-page tactics to improve rankings",
+      "Built strong client relationships through clear communication"
     ],
   },
 ];
 
 export const education: EducationItem[] = [
   {
-    title: "BA Advertising at BYU",
-    date: "2018 to 2022",
-    location: "Provo, UT",
+    title: "Global Marketing at Fondazione Italia USA",
+    date: "2021 to 2022",
+    location: "Rome, IT",
     description: [
-      "Focus: Brand strategy and communication design",
-      "Developed expertise in account leadership and growth marketing",
-      "Led multiple award-winning campaign projects",
+      "Studied global marketing and export strategies for Made in Italy goods",
+      "Awarded scholarship for excellence in international communication",
+      "Focused on movement and promotion of Italian products abroad"
     ],
   },
   {
-    title: "UX Design Certificate at Google",
-    date: "2020 to 2021",
-    location: "Remote",
+    title: "Data Analytics at 24ORE Business School",
+    date: "2021",
+    location: "Milan, IT",
     description: [
-      "Mastered user journey mapping and wireframing techniques",
-      "Completed 5 end-to-end product design projects",
-      "Applied UX principles to real-world client challenges",
+      "Learned advanced data analytics and marketing intelligence techniques",
+      "Explored automation and visualization of large data sets",
+      "Applied methodologies to real-world business cases"
+    ],
+  },
+  {
+    title: "E-commerce: Des. and Mgmt. at IED",
+    date: "2020 to 2021",
+    location: "Florence, IT",
+    description: [
+      "Studied advanced e-commerce management and marketing",
+      "Focused on user experience and digital sales strategies",
+      "Applied concepts to practical projects and case studies"
+    ],
+  },
+  {
+    title: "Web Design at Istituto Modartech",
+    date: "2018 to 2019",
+    location: "Pisa, IT",
+    description: [
+      "Learned web design fundamentals and UX/UI principles",
+      "Practiced front-end development techniques",
+      "Developed digital projects from concept to launch"
+    ],
+  },
+  {
+    title: "B.A. in Clinical Psychology at Univ. of Pisa",
+    date: "2013 to 2017",
+    location: "Pisa, IT",
+    description: [
+      "Studied core psychology and research methodologies",
+      "Focused on clinical applications and case analysis",
+      "Gained practical experience through internships and workshops"
     ],
   },
 ];
 
 export const projects: ProjectItem[] = [
   {
-    title: "Outr.ai",
-    href: "https://outr.ai",
+    title: "Verbalist",
+    href: "https://www.verbalist.it/en/",
     description: [
-      "AI agents for scaling sales outreach",
-      "Role: Product Designer, AI Engineer, and Design Engineer",
-      "Built with Typescript and Next.js",
-    ],
-  },
-  {
-    title: "WaveFinder",
-    href: "https://wavefinder.io",
-    description: [
-      "Marketing message testing powered by AI",
-      "Role: Product Designer, AI Engineer, and Design Engineer",
-      "Built with Typescript and Next.js",
-    ],
-  },
-  {
-    title: "Swyftfin",
-    href: "https://swyftfin.com",
-    description: [
-      "Portable lending platform for home service providers",
-      "Role: Product Designer and Design Engineer",
-      "Built with Typescript and Next.js",
+      "Advanced AI tool for SEO content analysis and optimization",
+      "Role: Product Designer and AI Engineer, focused on content strategy automation",
+      "Built with Python, IBM Watson NLU, OpenAI, and Anthropic APIs"
     ],
   },
 ];
 
 export const openSource: OpenSourceItem[] = [
   {
-    title: "Router.so",
-    href: "https://router.so",
+    title: "NLU Analyzer",
+    href: "https://nlu-analyzer.vercel.app/",
     description: [
-      "Headless lead router and form backend",
-      "Role: Product Designer and Design Engineer",
-      "200+ Stars on Github, 800+ Users",
+      "Advanced text analysis and optimization tool using IBM Watson NLU and AI models",
+      "Features text analysis, AI optimization, and multiple export formats",
+      "Built with React, TypeScript, Tailwind CSS, and shadcn/ui"
     ],
   },
   {
-    title: "Components",
-    href: "https://components.bridger.to",
+    title: "Web Content Scraper",
+    href: "https://website-content-scraper.vercel.app/",
     description: [
-      "Collection of components for building marketing websites",
-      "Next.js, Tailwind, React, Typescript, and shadcn/ui",
-      "260+ Stars on Github",
-    ],
-  },
-  {
-    title: "Craft Design System",
-    href: "https://craft-ds.com",
-    description: [
-      "Design system for building websites FAST!",
-      "Next.js, Tailwind, React, Typescript, and shadcn/ui",
-      "170+ Stars on Github",
-    ],
-  },
-  {
-    title: "Next WP",
-    href: "https://wp.9d8.dev",
-    description: [
-      "Wordpress as a headless CMS using Next.js",
-      "Featured by Vercel as a template",
-      "620+ Stars on Github",
+      "Clean web content extraction tool with minimalist design",
+      "Built with React, TypeScript, and Firecrawl API integration",
+      "Features dark mode and API key management"
     ],
   },
 ];

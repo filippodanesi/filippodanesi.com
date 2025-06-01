@@ -63,16 +63,16 @@ function Intro({ intro }: IntroProps) {
       <Image
         src={Logo}
         alt={intro.name}
-        width={48}
-        height={39.09}
-        className="invert dark:invert-0 mb-8 fade-in-up"
+        width={36}
+        height={36}
+        className="mb-8 fade-in-up"
       />
 
       <h1 className="fade-in-up !delay-100">{intro.name}</h1>
 
       <div className="dont-print flex gap-4 fade-in-up !delay-200">
         <a href={intro.href} target="_blank">
-          Portfolio
+          Blog
         </a>
         <a href={intro.github} target="_blank">
           Github

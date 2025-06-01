@@ -159,7 +159,7 @@ export const projects: ProjectItem[] = [
 export const openSource: OpenSourceItem[] = [
   {
     title: "NLU Analyzer",
-    href: "https://nlu-analyzer.vercel.app/",
+    href: "https://github.com/filippodanesi/ibm-watson-nlu-analyzer",
     description: [
       "Advanced text analysis and optimization tool using IBM Watson NLU and AI models",
       "Features text analysis, AI optimization, and multiple export formats",
@@ -168,7 +168,7 @@ export const openSource: OpenSourceItem[] = [
   },
   {
     title: "Web Content Scraper",
-    href: "https://website-content-scraper.vercel.app/",
+    href: "https://github.com/filippodanesi/website-content-scraper",
     description: [
       "Clean web content extraction tool with minimalist design",
       "Built with React, TypeScript, and Firecrawl API integration",

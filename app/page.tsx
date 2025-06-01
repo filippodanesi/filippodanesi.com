@@ -86,7 +86,7 @@ function Intro({ intro }: IntroProps) {
           fileName={`${intro.name
             .toString()
             .toLowerCase()
-            .replace(/\s/g, "_")}_resume_2024.pdf`}
+            .replace(/\s/g, "_")}_resume_2025.pdf`}
         />
       </div>
 

@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: `Resume of ${intro.name}`,
-  description: "SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili.",
+  description: "SEO specialist combining data, AI, and content to drive search growth and deliver measurable results.",
 };
 
 export default function RootLayout({
@@ -29,21 +29,72 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="description" content="SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili." />
+        <meta name="description" content="SEO specialist combining data, AI, and content to drive search growth and deliver measurable results." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.filippodanesi.com/" />
+        <meta property="og:title" content="Resume of Filippo Danesi" />
+        <meta property="og:description" content="SEO specialist combining data, AI, and content to drive search growth and deliver measurable results." />
+        <meta property="og:url" content="https://www.filippodanesi.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.filippodanesi.com/logo.svg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Resume of Filippo Danesi" />
+        <meta name="twitter:description" content="SEO specialist combining data, AI, and content to drive search growth and deliver measurable results." />
+        <meta name="twitter:image" content="https://www.filippodanesi.com/logo.svg" />
         <script type="application/ld+json" suppressHydrationWarning dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Filippo Danesi",
           "url": "https://www.filippodanesi.com/",
           "image": "https://www.filippodanesi.com/logo.svg",
+          "jobTitle": "SEO Specialist",
+          "description": "SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili.",
+          "email": "mailto:hello@filippodanesi.com",
           "sameAs": [
             "https://github.com/filippodanesi",
             "https://linkedin.com/in/filippodanesi",
             "https://www.serp-secrets.com"
           ],
-          "jobTitle": "SEO Specialist",
-          "description": "SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili.",
-          "email": "mailto:hello@filippodanesi.com"
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Triumph",
+            "url": "https://www.triumph.com"
+          },
+          "knowsAbout": [
+            "SEO",
+            "Content Strategy",
+            "Data Analytics",
+            "AI",
+            "Machine Learning",
+            "NLP",
+            "NLU"
+          ],
+          "skills": [
+            "Technical SEO",
+            "Content Optimization",
+            "Data Analysis",
+            "AI Integration",
+            "Machine Learning",
+            "Natural Language Processing"
+          ],
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Fondazione Italia USA",
+              "url": "https://www.fondazioneitaliausa.org"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "24ORE Business School",
+              "url": "https://www.24orebs.com"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "IED",
+              "url": "https://www.ied.edu"
+            }
+          ]
         }) }} />
       </head>
       <body

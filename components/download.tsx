@@ -1,6 +1,7 @@
 "use client";
 
 import { toast } from "sonner";
+import { usePlausible } from "next-plausible";
 
 interface DownloadPDFProps {
   pdfUrl: string;
@@ -11,7 +12,9 @@ export function DownloadPDF({
   pdfUrl,
   fileName = "resume.pdf",
 }: DownloadPDFProps) {
+  const plausible = usePlausible();
   const handleDownload = async () => {
+    plausible("Download PDF", { props: { fileName } });
     const loadingToastId = toast.loading("Downloading PDF...");
 
     try {

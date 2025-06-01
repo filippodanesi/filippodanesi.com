@@ -3,8 +3,8 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./print.css";
 import { intro } from "@/lib/content";
-import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "sonner";
+import PlausibleProvider from "next-plausible";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -100,9 +100,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} sm:p-12 antialiased`}
       >
-        {children}
-        <Toaster position="top-right" />
-        <Analytics />
+        <PlausibleProvider domain="filippodanesi.com" trackOutboundLinks trackFileDownloads>
+          {children}
+          <Toaster position="top-right" />
+        </PlausibleProvider>
       </body>
     </html>
   );

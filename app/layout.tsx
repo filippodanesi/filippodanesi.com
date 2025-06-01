@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: `Resume of ${intro.name}`,
-  description: intro.about,
+  description: "SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili.",
 };
 
 export default function RootLayout({
@@ -28,6 +28,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="description" content="SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili." />
+        <script type="application/ld+json" suppressHydrationWarning dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Filippo Danesi",
+          "url": "https://www.filippodanesi.com/",
+          "image": "https://www.filippodanesi.com/logo.svg",
+          "sameAs": [
+            "https://github.com/filippodanesi",
+            "https://linkedin.com/in/filippodanesi",
+            "https://www.serp-secrets.com"
+          ],
+          "jobTitle": "SEO Specialist",
+          "description": "SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili.",
+          "email": "mailto:hello@filippodanesi.com"
+        }) }} />
+      </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} sm:p-12 antialiased`}
       >

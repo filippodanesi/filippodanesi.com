@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `Resume of ${intro.name}`,
+  title: `${intro.name} \ SEO Strategist & AI Specialist`,
   description: "SEO specialist combining data, AI, and content to drive search growth and deliver measurable results.",
 };
 

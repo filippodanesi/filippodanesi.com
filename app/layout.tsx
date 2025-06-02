@@ -42,6 +42,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Resume of Filippo Danesi" />
         <meta name="twitter:description" content="SEO specialist combining data, AI, and content to drive search growth and deliver measurable results." />
         <meta name="twitter:image" content="https://www.filippodanesi.com/logo.svg" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script type="application/ld+json" suppressHydrationWarning dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",

@@ -104,9 +104,6 @@ export default function RootLayout({
         <PlausibleProvider domain="filippodanesi.com" trackOutboundLinks trackFileDownloads>
           {children}
           <Toaster position="top-right" />
-          <footer className="mt-16 py-6 text-center text-sm text-gray-500">
-            <a href="/contacts" className="underline hover:text-gray-700">Contacts</a>
-          </footer>
         </PlausibleProvider>
       </body>
     </html>

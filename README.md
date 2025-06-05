@@ -32,7 +32,7 @@ With six years across markets, I'm an SEO specialist fusing data and AI to unloc
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-171717?style=for-the-badge&logo=linkedin&logoColor=F2F1EC)](https://www.linkedin.com/in/filippodanesi/)
 [![Blog](https://img.shields.io/badge/Blog-171717?style=for-the-badge&logo=blogger&logoColor=F2F1EC)](https://www.serp-secrets.com)
-[![Website](https://img.shields.io/badge/Website-171717?style=for-the-badge&logo=google-chrome&logoColor=F2F1EC)](https://www.filippodanesi.com/contact)
+[![Website](https://img.shields.io/badge/Website-171717?style=for-the-badge&logo=google-chrome&logoColor=F2F1EC)](https://www.filippodanesi.com)
 
 ## License
 

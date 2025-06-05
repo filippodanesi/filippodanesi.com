@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-171717?style=for-the-badge&logo=typescript&logoColor=F2F1EC)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-171717?style=for-the-badge&logo=tailwind-css&logoColor=F2F1EC)](https://tailwindcss.com/)
 
-Personal website and portfolio of Filippo Danesi, SEO Tech Lead with expertise in Technical SEO, Content Strategy and AI Implementation for enterprise search optimization.
+Hi I'm Filippo Danesi, an SEO Specialist with expertise in Technical SEO, Content Strategy and AI Implementation for enterprise search optimization.
 
 ## Stack
 
@@ -28,7 +28,7 @@ npm run deploy     # Deploy to Vercel
 
 ## Professional Background
 
-Currently SEO Tech Lead at NUR Digital Marketing, previously leading technical SEO initiatives at TeseCom and Brand-On's e-commerce division. Expertise spans technical SEO auditing, AI integration for content optimization, and enterprise-level search strategy implementation.
+With six years across markets, I'm an SEO specialist fusing data and AI to unlock search growth and seamless journeys. Passionate about the overlap of code, content and insight, I turn analytics into strategies that drive measurable results.
 
 ## Connect
 

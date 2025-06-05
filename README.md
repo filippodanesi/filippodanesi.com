@@ -1,5 +1,3 @@
-![Cover Image](https://github.com/filippodanesi/filippodanesi.com/blob/main/public/326shots_so.png)
-
 # Filippo Danesi
 
 [![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-171717.svg?style=for-the-badge&logo=next.js&logoColor=F2F1EC)](https://nextjs.org)

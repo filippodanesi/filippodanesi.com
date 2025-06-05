@@ -1,4 +1,4 @@
-# Filippo Danesi
+# filippodanesi.com
 
 [![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-171717.svg?style=for-the-badge&logo=next.js&logoColor=F2F1EC)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-171717?style=for-the-badge&logo=typescript&logoColor=F2F1EC)](https://www.typescriptlang.org/)

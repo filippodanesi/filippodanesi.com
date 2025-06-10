@@ -79,9 +79,10 @@ function Item({ title, date, description, href, location }: ItemProps) {
       </div>
       <div className="grid gap-1">
         {description.map((item, i) => (
-          <p key={i}>
-            {item}
-          </p>
+          <li key={i} className="grid grid-cols-[auto_1fr] items-baseline gap-1 list-none">
+            <p className="text-muted-foreground/50 text-xs">&gt;</p>
+            <p>{item}</p>
+          </li>
         ))}
       </div>
     </section>

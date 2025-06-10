@@ -71,10 +71,10 @@ function Item({ title, date, description, href, location }: ItemProps) {
           )}
         </h3>
         {date && (
-          <p className="text-muted-foreground text-xs sm:text-sm">{date}</p>
+          <p className="text-muted-foreground text-xs">{date}</p>
         )}
         {location && (
-          <p className="text-muted-foreground text-xs sm:text-sm">{location}</p>
+          <p className="text-muted-foreground text-xs">{location}</p>
         )}
       </div>
       <div className="grid gap-1">

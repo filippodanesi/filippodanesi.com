@@ -17,18 +17,19 @@ export function Intro({ intro }: IntroProps) {
       <h1 className="fade-in-up !delay-100">{intro.name}</h1>
 
       <div className="dont-print flex gap-4 fade-in-up !delay-200">
-        <a href={intro.href} target="_blank" onClick={() => plausible("Click Blog Link", { props: { location: "header", target: intro.href } })}>
+        <a className="text-muted-foreground" href={intro.href} target="_blank" onClick={() => plausible("Click Blog Link", { props: { location: "header", target: intro.href } })}>
           Blog
         </a>
-        <a href={intro.github} target="_blank" onClick={() => plausible("Click Github Link", { props: { location: "header", target: intro.github } })}>
+        <a className="text-muted-foreground" href={intro.github} target="_blank" onClick={() => plausible("Click Github Link", { props: { location: "header", target: intro.github } })}>
           Github
         </a>
-        <a href={intro.linkedin} target="_blank" onClick={() => plausible("Click LinkedIn Link", { props: { location: "header", target: intro.linkedin } })}>
+        <a className="text-muted-foreground" href={intro.linkedin} target="_blank" onClick={() => plausible("Click LinkedIn Link", { props: { location: "header", target: intro.linkedin } })}>
           LinkedIn
         </a>
         <Copy text={intro.email}>Email</Copy>
         <DownloadPDF
           pdfUrl="../resume.pdf"
+          className="text-muted-foreground"
           fileName={`${intro.name
             .toString()
             .toLowerCase()

@@ -101,7 +101,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} sm:p-12 antialiased`}
       >
-        <PlausibleProvider domain="filippodanesi.com" trackOutboundLinks trackFileDownloads>
+        <PlausibleProvider domain="filippodanesi.com">
           {children}
           <Toaster position="top-right" />
         </PlausibleProvider>

@@ -29,7 +29,6 @@ export function Intro({ intro }: IntroProps) {
         <Copy text={intro.email}>Email</Copy>
         <DownloadPDF
           pdfUrl="../resume.pdf"
-          className="text-muted-foreground"
           fileName={`${intro.name
             .toString()
             .toLowerCase()

@@ -2,19 +2,27 @@
 
 import { toast } from "sonner";
 
-interface CopyProps {
-  children: React.ReactNode;
+type CopyProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   text: string;
-}
+};
 
-export const Copy: React.FC<CopyProps> = ({ children, text }) => {
+export const Copy: React.FC<CopyProps> = ({
+  text,
+  className,
+  children,
+  ...props
+}) => {
   const handleClick = () => {
     navigator.clipboard.writeText(text);
     toast.success("Copied to clipboard");
   };
 
   return (
-    <button className="link" onClick={handleClick}>
+    <button
+      onClick={handleClick}
+      {...props}
+      className={cn("link", className)}
+    >
       {children}
     </button>
   );

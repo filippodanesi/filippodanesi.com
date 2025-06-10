@@ -15,13 +15,6 @@ export function Intro({ intro }: IntroProps) {
   const plausible = usePlausible();
   return (
     <section className="grid gap-4">
-      <Image
-        src={Logo}
-        alt={intro.name}
-        width={36}
-        height={36}
-        className="mb-8 fade-in-up"
-      />
 
       <h1 className="fade-in-up !delay-100">{intro.name}</h1>
 

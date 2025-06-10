@@ -79,7 +79,7 @@ function Item({ title, date, description, href, location }: ItemProps) {
       </div>
       <div className="grid gap-1">
         {description.map((item, i) => (
-          <p key={i} className="text-muted-foreground">
+          <p key={i}>
             {item}
           </p>
         ))}

@@ -10,15 +10,16 @@ body {
 
 a,
 .link {
-  @apply underline underline-offset-[3px] decoration-dotted decoration-muted-foreground/50 hover:text-muted-foreground transition-all;
+  /* @apply underline underline-offset-[3px] decoration-dotted decoration-muted-foreground/50 hover:text-muted-foreground transition-all; */
 }
 
 h1 {
-  @apply text-2xl;
+  /* @apply text-2xl; */
+  font-size: inherit;
 }
 
 h2 {
-  @apply text-xl;
+  font-size: inherit !important;
 }
 
 /* Theme Styles */

@@ -9,7 +9,8 @@
   body {
     background: white !important;
     color: black !important;
-    font-size: 10pt !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.875rem !important;
     line-height: 1.4 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -36,30 +37,41 @@
 
   /* Typography */
   h1 {
-    font-size: 16pt !important;
+    font-size: 0.875rem !important;
     margin-bottom: 0.5rem !important;
+    color: black !important;
+    font-weight: 600 !important;
   }
 
   h2 {
-    font-size: 13pt !important;
+    font-size: 0.875rem !important;
     margin-bottom: 0.75rem !important;
     color: black !important;
     border-bottom: 1px solid #ddd !important;
     padding-bottom: 0.25rem !important;
+    font-weight: 500 !important;
   }
 
   h3 {
-    font-size: 11pt !important;
+    font-size: 0.875rem !important;
     margin-bottom: 0.25rem !important;
+    color: black !important;
+    font-weight: 500 !important;
   }
 
   p {
     margin: 0 !important;
+    font-size: 0.875rem !important;
+    color: black !important;
   }
 
   /* Links */
   a {
     color: black !important;
+    text-decoration: none !important;
+  }
+
+  .link {
     text-decoration: none !important;
   }
 
@@ -85,9 +97,24 @@
     padding: 0.5rem 0 !important;
   }
 
-  /* Text Colors */
+  /* Text Colors - Allineati con l'HTML */
   .text-muted-foreground {
-    color: #444 !important;
+    color: #666 !important;
+    opacity: 1 !important;
+  }
+
+  .text-xs {
+    font-size: 0.75rem !important;
+    color: #666 !important;
+  }
+
+  .text-muted-foreground.text-xs {
+    color: #666 !important;
+  }
+
+  /* Simbolo ">" nelle liste */
+  .text-muted-foreground\/50 {
+    color: #999 !important;
     opacity: 1 !important;
   }
 
@@ -104,7 +131,6 @@
     animation: none !important;
     transition: none !important;
     box-shadow: none !important;
-    background: transparent !important;
   }
 
   /* Divide Lines */
@@ -117,14 +143,53 @@
     background: transparent !important;
   }
 
-  /* Logo */
-  /* img {
-    print-color-adjust: exact !important;
-    -webkit-print-color-adjust: exact !important;
-  } */
+  li {
+    list-style: none !important;
+  }
+
+  .grid-cols-\[auto_1fr\] {
+    grid-template-columns: auto 1fr !important;
+  }
+
+  .items-baseline {
+    align-items: baseline !important;
+  }
+
+  img,
+  svg,
+  [class*="logo"] {
+    display: none !important;
+  }
+
+  .bg-background,
+  .bg-muted,
+  .bg-card {
+    background: white !important;
+  }
 
   /* Hide Print-specific Elements */
   .print-hide {
     display: none !important;
+  }
+
+  .gap-4 {
+    gap: 1rem !important;
+  }
+
+  .gap-8 {
+    gap: 1.5rem !important;
+  }
+
+  .py-3 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .font-medium {
+    font-weight: 500 !important;
+  }
+
+  .max-w-prose {
+    max-width: none !important;
   }
 }

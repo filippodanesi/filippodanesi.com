@@ -2,6 +2,7 @@
 
 import { toast } from "sonner";
 import { usePlausible } from "next-plausible";
+import { cn } from "@/lib/utils";
 
 type DownloadPDFProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   pdfUrl: string;

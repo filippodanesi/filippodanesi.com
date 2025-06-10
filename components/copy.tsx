@@ -1,6 +1,7 @@
 "use client";
 
 import { toast } from "sonner";
+import { cn } from "@/lib/utils";
 
 type CopyProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   text: string;

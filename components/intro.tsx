@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Logo from "@/public/logo.svg";
 import { Copy } from "@/components/copy";
 import { DownloadPDF } from "@/components/download";
 import { usePlausible } from "next-plausible";

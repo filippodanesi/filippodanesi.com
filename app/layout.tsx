@@ -50,7 +50,7 @@ export default function RootLayout({
           "url": "https://www.filippodanesi.com/",
           "image": "https://www.filippodanesi.com/logo.svg",
           "jobTitle": "SEO Specialist",
-          "description": "SEO specialist: unisco dati, AI e contenuti per strategie di crescita e risultati misurabili.",
+          "description": "SEO specialist combining data, AI, and content to drive search growth and deliver measurable results.",
           "email": "mailto:hello@filippodanesi.com",
           "sameAs": [
             "https://github.com/filippodanesi",
@@ -59,7 +59,7 @@ export default function RootLayout({
           ],
           "worksFor": {
             "@type": "Organization",
-            "name": "Triumph",
+            "name": "Triumph International",
             "url": "https://www.triumph.com"
           },
           "knowsAbout": [

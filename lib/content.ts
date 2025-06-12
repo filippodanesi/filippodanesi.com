@@ -46,7 +46,7 @@ export const intro: Intro = {
 
 export const work: ResumeItem[] = [
   {
-    title: "Content Manager, SEO at Triumph",
+    title: "Content Manager, SEO at Triumph Int.",
     href: "https://www.triumph.com",
     date: "2025 to Present",
     location: "Zürich, CH",

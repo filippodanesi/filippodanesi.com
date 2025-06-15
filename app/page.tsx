@@ -60,7 +60,7 @@ type ItemProps = {
 
 function Item({ title, date, description, href, location, isFirst }: ItemProps) {
   return (
-    <section className={`grid sm:grid-cols-[1fr_2fr] ${isFirst ? "pt-3 pb-5" : "py-5"} gap-5 sm:gap-2 px-3 -mx-3 hover:bg-muted/50 transition-all`}>
+    <section className={`grid sm:grid-cols-[1fr_2fr] ${isFirst ? "pt-3 pb-5 sm:py-3" : "py-5 sm:py-3"} gap-5 sm:gap-2 px-3 -mx-3 hover:bg-muted/50 transition-all`}>
       <div>
         <h3 className="font-medium mb-4 sm:mb-0">
           {href ? (

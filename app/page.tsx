@@ -9,8 +9,8 @@ export default function Home() {
       <section className="grid gap-4 fade-in-up !delay-300">
         <h2>Work</h2>
         <div className="grid divide-y">
-          {work.map((item) => (
-            <Item key={item.title} {...item} />
+          {work.map((item, i) => (
+            <Item key={item.title} {...item} isFirst={i === 0} />
           ))}
         </div>
       </section>
@@ -18,8 +18,8 @@ export default function Home() {
       <section className="grid gap-4 fade-in-up !delay-500">
         <h2>Education</h2>
         <div className="grid divide-y">
-          {education.map((item) => (
-            <Item key={item.title} {...item} />
+          {education.map((item, i) => (
+            <Item key={item.title} {...item} isFirst={i === 0} />
           ))}
         </div>
       </section>
@@ -27,8 +27,8 @@ export default function Home() {
       <section className="grid gap-4 fade-in-up !delay-700">
         <h2>Projects</h2>
         <div className="grid divide-y">
-          {projects.map((item) => (
-            <Item key={item.title} {...item} />
+          {projects.map((item, i) => (
+            <Item key={item.title} {...item} isFirst={i === 0} />
           ))}
         </div>
       </section>
@@ -36,8 +36,8 @@ export default function Home() {
       <section className="grid gap-4 fade-in-up !delay-1000">
         <h2>Open Source</h2>
         <div className="grid divide-y">
-          {openSource.map((item) => (
-            <Item key={item.title} {...item} />
+          {openSource.map((item, i) => (
+            <Item key={item.title} {...item} isFirst={i === 0} />
           ))}
         </div>
       </section>
@@ -55,11 +55,12 @@ type ItemProps = {
   description: string[];
   href?: string;
   location?: string;
+  isFirst: boolean;
 };
 
-function Item({ title, date, description, href, location }: ItemProps) {
+function Item({ title, date, description, href, location, isFirst }: ItemProps) {
   return (
-    <section className="grid sm:grid-cols-[1fr_2fr] py-3 gap-5 sm:gap-2 px-3 -mx-3 hover:bg-muted/50 transition-all">
+    <section className={`grid sm:grid-cols-[1fr_2fr] ${isFirst ? "py-3" : "py-4"} gap-5 sm:gap-2 px-3 -mx-3 hover:bg-muted/50 transition-all`}>
       <div>
         <h3 className="font-medium mb-4 sm:mb-0">
           {href ? (

@@ -14,7 +14,7 @@ export function Intro({ intro }: IntroProps) {
 
   return (
     <section className="grid gap-4">
-      <h1 className="text-2xl font-semibold fade-in-up !delay-100">{intro.name}</h1>
+      <h1 className="font-semibold fade-in-up !delay-100">{intro.name}</h1>
 
       <div className="dont-print flex gap-4 fade-in-up !delay-200">
         <a

@@ -82,7 +82,7 @@ function Item({ title, date, description, href, location, isFirst }: ItemProps) 
         {description.map((item, i) => (
           <li key={i} className="grid grid-cols-[auto_1fr] items-baseline gap-1 list-none">
             <p className="text-muted-foreground/50 text-xs">&gt;</p>
-            <p>{item}</p>
+            <p className="text-muted-foreground">{item}</p>
           </li>
         ))}
       </div>

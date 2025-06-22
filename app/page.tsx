@@ -7,7 +7,7 @@ export default function Home() {
       <IntroComponent intro={intro} />
 
       <section className="grid gap-4 fade-in-up !delay-300">
-        <h2>Work</h2>
+        <h2 className="text-base font-medium">Work</h2>
         <div className="grid divide-y">
           {work.map((item, i) => (
             <Item key={item.title} {...item} isFirst={i === 0} />
@@ -16,7 +16,7 @@ export default function Home() {
       </section>
 
       <section className="grid gap-4 fade-in-up !delay-500">
-        <h2>Education</h2>
+        <h2 className="text-base font-medium">Education</h2>
         <div className="grid divide-y">
           {education.map((item, i) => (
             <Item key={item.title} {...item} isFirst={i === 0} />
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       <section className="grid gap-4 fade-in-up !delay-700">
-        <h2>Projects</h2>
+        <h2 className="text-base font-medium">Projects</h2>
         <div className="grid divide-y">
           {projects.map((item, i) => (
             <Item key={item.title} {...item} isFirst={i === 0} />
@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       <section className="grid gap-4 fade-in-up !delay-1000">
-        <h2>Open Source</h2>
+        <h2 className="text-base font-medium">Open Source</h2>
         <div className="grid divide-y">
           {openSource.map((item, i) => (
             <Item key={item.title} {...item} isFirst={i === 0} />

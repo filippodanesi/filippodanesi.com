@@ -13,14 +13,14 @@ export function Intro({ intro }: IntroProps) {
   const plausible = usePlausible();
 
   return (
-    <section className="grid gap-4">
-      <h1 className="font-semibold tracking-tight fade-in-up !delay-100">{intro.name}</h1>
+    <section className="flex flex-col">
+      <h1 className="font-semibold tracking-tight fade-in-up !delay-100 mb-1">{intro.name}</h1>
       
       <h2 className="text-muted-foreground/70 tracking-tight fade-in-up !delay-200">
         AI-driven SEO
       </h2>
 
-      <div className="dont-print flex gap-4 fade-in-up !delay-300">
+      <div className="dont-print flex gap-4 fade-in-up !delay-300 mt-4">
         <a
           href={intro.href}
           target="_blank"
@@ -77,7 +77,7 @@ export function Intro({ intro }: IntroProps) {
         />
       </div>
 
-      <p className="text-muted-foreground max-w-prose fade-in-up !delay-400">
+      <p className="text-muted-foreground max-w-prose fade-in-up !delay-400 mt-4">
         {intro.about}
       </p>
     </section>

@@ -16,7 +16,7 @@ export function Intro({ intro }: IntroProps) {
     <section className="grid gap-4">
       <h1 className="font-semibold tracking-tight fade-in-up !delay-100">{intro.name}</h1>
       
-      <h2 className="italic text-muted-foreground tracking-tight fade-in-up !delay-200">
+      <h2 className="text-sm uppercase tracking-wider text-muted-foreground fade-in-up !delay-200">
         AI-driven SEO
       </h2>
 

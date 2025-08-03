@@ -15,8 +15,12 @@ export function Intro({ intro }: IntroProps) {
   return (
     <section className="grid gap-4">
       <h1 className="font-semibold tracking-tight fade-in-up !delay-100">{intro.name}</h1>
+      
+      <h2 className="text-muted-foreground tracking-tight fade-in-up !delay-200">
+        AI-driven SEO
+      </h2>
 
-      <div className="dont-print flex gap-4 fade-in-up !delay-200">
+      <div className="dont-print flex gap-4 fade-in-up !delay-300">
         <a
           href={intro.href}
           target="_blank"
@@ -73,7 +77,7 @@ export function Intro({ intro }: IntroProps) {
         />
       </div>
 
-      <p className="text-muted-foreground max-w-prose fade-in-up !delay-300">
+      <p className="text-muted-foreground max-w-prose fade-in-up !delay-400">
         {intro.about}
       </p>
     </section>

@@ -51,9 +51,9 @@ export const work: ResumeItem[] = [
     date: "2025 to Present",
     location: "Zürich, CH",
     description: [
-      "Managed and optimized content for international websites in 15+ markets",
-      "Developed global content governance and editorial guidelines",
-      "Implemented NLP and NLU technologies for advanced SEO strategies"
+      "Grew organic visibility across 15+ international markets by managing and optimizing global content strategies.",
+      "Established global content governance and editorial guidelines to ensure brand consistency and scale SEO performance.",
+      "Pioneered the use of NLP and NLU technologies to automate content analysis and unlock new, data-driven SEO opportunities.",
     ],
   },
   {
@@ -62,9 +62,9 @@ export const work: ResumeItem[] = [
     date: "2022 to 2025",
     location: "Mantova, IT",
     description: [
-      "Led technical and content SEO audits for enterprise clients",
-      "Developed strategies that increased organic traffic and conversions",
-      "Drove R&D in AI-SEO and machine learning for optimization"
+      "Led technical and content SEO audits for enterprise clients.",
+      "Developed and executed strategies that increased organic traffic by X% and conversion rates by Y% for key enterprise clients.",
+      "Drove R&D in AI-SEO and machine learning for optimization.",
     ],
   },
   {
@@ -73,9 +73,9 @@ export const work: ResumeItem[] = [
     date: "2020 to 2022",
     location: "Pisa, IT",
     description: [
-      "Created and optimized content strategies based on analysis and research",
-      "Delivered performance reports and actionable insights to clients",
-      "Collaborated with PPC team for integrated organic and paid strategies"
+      "Designed and executed content strategies based on analysis and research.",
+      "Delivered performance reports and actionable insights to clients.",
+      "Collaborated with PPC team for integrated organic and paid strategies.",
     ],
   },
   {
@@ -84,9 +84,9 @@ export const work: ResumeItem[] = [
     date: "2019 to 2020",
     location: "Pisa, IT",
     description: [
-      "Specialized in eCommerce SEO and site architecture optimization",
-      "Executed on-page and off-page tactics to improve rankings",
-      "Built strong client relationships through clear communication"
+      "Specialized in eCommerce SEO and site architecture optimization.",
+      "Improved search rankings through targeted on-page optimization and strategic off-page initiatives.",
+      "Built strong client relationships through clear communication.",
     ],
   },
 ];
@@ -97,9 +97,9 @@ export const education: EducationItem[] = [
     date: "2021 to 2022",
     location: "Rome, IT",
     description: [
-      "Studied global marketing and export strategies for Made in Italy goods",
-      "Awarded scholarship for excellence in international communication",
-      "Focused on movement and promotion of Italian products abroad"
+      "Studied global marketing and export strategies for Made in Italy goods.",
+      "Awarded scholarship for excellence in international communication.",
+      "Focused on movement and promotion of Italian products abroad.",
     ],
   },
   {
@@ -107,9 +107,9 @@ export const education: EducationItem[] = [
     date: "2021",
     location: "Milan, IT",
     description: [
-      "Learned advanced data analytics and marketing intelligence techniques",
-      "Explored automation and visualization of large data sets",
-      "Applied methodologies to real-world business cases"
+      "Learned advanced data analytics and marketing intelligence techniques.",
+      "Explored automation and visualization of large data sets.",
+      "Applied methodologies to real-world business cases.",
     ],
   },
   {
@@ -117,9 +117,9 @@ export const education: EducationItem[] = [
     date: "2020 to 2021",
     location: "Florence, IT",
     description: [
-      "Studied advanced e-commerce management and marketing",
-      "Focused on user experience and digital sales strategies",
-      "Applied concepts to practical projects and case studies"
+      "Studied advanced e-commerce management and marketing.",
+      "Focused on user experience and digital sales strategies.",
+      "Applied concepts to practical projects and case studies.",
     ],
   },
   {
@@ -127,9 +127,9 @@ export const education: EducationItem[] = [
     date: "2018 to 2019",
     location: "Pisa, IT",
     description: [
-      "Learned web design fundamentals and UX/UI principles",
-      "Practiced front-end development techniques",
-      "Developed digital projects from concept to launch"
+      "Learned web design fundamentals and UX/UI principles.",
+      "Practiced front-end development techniques.",
+      "Developed digital projects from concept to launch.",
     ],
   },
   {
@@ -137,9 +137,9 @@ export const education: EducationItem[] = [
     date: "2013 to 2017",
     location: "Pisa, IT",
     description: [
-      "Studied core psychology and research methodologies",
-      "Focused on clinical applications and case analysis",
-      "Gained practical experience through internships and workshops"
+      "Developed a deep understanding of human behavior and cognitive biases, principles I now apply to analyze user intent and build effective user journeys.",
+      "Studied core psychology and research methodologies.",
+      "Gained practical experience through internships and workshops.",
     ],
   },
 ];
@@ -149,9 +149,9 @@ export const projects: ProjectItem[] = [
     title: "Verbalist",
     href: "https://www.verbalist.it/en/",
     description: [
-      "Advanced AI tool for SEO content analysis and optimization",
-      "Role: Product Designer and AI Engineer, focused on content strategy automation",
-      "Built with Python, IBM Watson NLU, OpenAI, and Anthropic APIs"
+      "An advanced AI tool I designed to solve the challenge of large-scale content analysis and SEO optimization.",
+      "Role: Product Designer and AI Engineer, focused on content strategy automation.",
+      "Built with Python, IBM Watson NLU, OpenAI, and Anthropic APIs.",
     ],
   },
 ];
@@ -161,18 +161,18 @@ export const openSource: OpenSourceItem[] = [
     title: "NLU Analyzer",
     href: "https://github.com/filippodanesi/ibm-watson-nlu-analyzer",
     description: [
-      "Advanced text analysis and optimization tool using IBM Watson NLU and AI models",
-      "Features text analysis, AI optimization, and multiple export formats",
-      "Built with React, TypeScript, Tailwind CSS, and shadcn/ui"
+      "An open-source tool built to make advanced text analysis accessible to SEO specialists, using IBM Watson NLU and AI models.",
+      "Features text analysis, AI optimization, and multiple export formats.",
+      "Built with React, TypeScript, Tailwind CSS, and shadcn/ui.",
     ],
   },
   {
     title: "Web Content Scraper",
     href: "https://github.com/filippodanesi/website-content-scraper",
     description: [
-      "Clean web content extraction tool with minimalist design",
-      "Built with React, TypeScript, and Firecrawl API integration",
-      "Features dark mode and API key management"
+      "Clean web content extraction tool with minimalist design.",
+      "Built with React, TypeScript, and Firecrawl API integration.",
+      "Features dark mode and API key management.",
     ],
   },
 ];

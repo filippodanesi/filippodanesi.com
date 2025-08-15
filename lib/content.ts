@@ -37,7 +37,7 @@ export interface OpenSourceItem extends ResumeItem {
 export const intro: Intro = {
   name: "Filippo Danesi",
   about:
-    "For the past six years, my passion has been exploring where code, content, and data meet to help businesses grow. As an SEO specialist, I use data and AI not just to increase search engine visibility, but to build clear and effective user journeys. My work is about turning complex analytics into straightforward strategies that deliver real results.",
+    "As an SEO specialist with 6+ years of experience, I drive measurable business growth where code, content, and data intersect. My work turns complex analytics into results by combining deep Data Analysis with foundational Technical SEO & Audits. I then leverage AI to build advanced Content Strategies and implement cutting-edge LLM Optimization for Search.",
   href: "https://www.serp-secrets.com",
   github: "https://github.com/filippodanesi",
   linkedin: "https://linkedin.com/in/filippodanesi",

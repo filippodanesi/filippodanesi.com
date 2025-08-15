@@ -17,7 +17,7 @@ export function Intro({ intro }: IntroProps) {
       <h1 className="font-semibold tracking-tight fade-in-up !delay-100 mb-1">{intro.name}</h1>
       
       <h2 className="text-muted-foreground/70 tracking-tight fade-in-up !delay-200">
-        AI-driven SEO
+        SEO, AI & LLM Specialist
       </h2>
 
       <div className="dont-print flex gap-4 fade-in-up !delay-300 mt-4">

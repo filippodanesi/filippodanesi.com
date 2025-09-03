@@ -1,3 +1,5 @@
+export * from "@/lib/types";
+
 import {
   Intro,
   ResumeItem,

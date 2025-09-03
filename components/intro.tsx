@@ -19,13 +19,9 @@ export function Intro({ intro }: IntroProps) {
       </h1>
 
       <h2 className="text-muted-foreground/70 tracking-tight fade-in-up !delay-200">
-        SEO, AI & GEO Manager
+        SEO, AI & GEO Manager in Zurich
       </h2>
-
-      <div className="flex items-center gap-x-4 text-sm fade-in-up !delay-300 mt-2">
-        <span className="text-muted-foreground/70">{intro.location}</span>
-      </div>
-
+      
       <div className="dont-print flex gap-4 fade-in-up !delay-400 mt-4">
         <a
           href={intro.href}

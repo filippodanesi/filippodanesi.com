@@ -11,7 +11,7 @@ type DownloadPDFProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export function DownloadPDF({
   pdfUrl,
-  fileName = "resume.pdf",
+  fileName = "Filippo_Danesi_SEO_AI_Manager_Resume.pdf",
   className,
   ...props
 }: DownloadPDFProps) {

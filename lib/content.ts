@@ -1,4 +1,3 @@
-// PASSO 1: Definiamo ed esportiamo i Tipi direttamente qui.
 export interface Intro {
   name: string;
   about: string;
@@ -17,12 +16,11 @@ export interface ResumeItem {
   description: string[];
 }
 
-export interface EducationItem extends ResumeItem {}
-export interface ProjectItem extends ResumeItem {}
-export interface OpenSourceItem extends ResumeItem {}
+export type EducationItem = ResumeItem;
+export type ProjectItem = ResumeItem;
+export type OpenSourceItem = ResumeItem;
 
 
-// PASSO 2: I tuoi dati, che ora usano i tipi definiti sopra.
 export const intro: Intro = {
   name: "Filippo Danesi",
   location: "Zurich, CH",

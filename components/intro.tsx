@@ -24,13 +24,6 @@ export function Intro({ intro }: IntroProps) {
 
       <div className="flex items-center gap-x-4 text-sm fade-in-up !delay-300 mt-2">
         <span className="text-muted-foreground/70">{intro.location}</span>
-        <div className="flex items-center gap-x-2">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-          </span>
-          <span className="text-muted-foreground">Available for hire</span>
-        </div>
       </div>
 
       <div className="dont-print flex gap-4 fade-in-up !delay-400 mt-4">

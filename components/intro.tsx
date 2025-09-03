@@ -18,7 +18,7 @@ export function Intro({ intro }: IntroProps) {
         {intro.name}
       </h1>
 
-      <h2 className="text-muted-foreground/70 tracking-tight italic fade-in-up !delay-200">
+      <h2 className="text-muted-foreground/70 tracking-tight fade-in-up !delay-200">
         SEO, AI & GEO Manager
       </h2>
 

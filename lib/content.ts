@@ -1,17 +1,31 @@
-export * from "@/lib/types";
+// PASSO 1: Definiamo ed esportiamo i Tipi direttamente qui.
+export interface Intro {
+  name: string;
+  about: string;
+  location: string;
+  href: string;
+  github: string;
+  linkedin: string;
+  email: string;
+}
 
-import {
-  Intro,
-  ResumeItem,
-  EducationItem,
-  ProjectItem,
-  OpenSourceItem,
-} from "@/lib/types";
+export interface ResumeItem {
+  title: string;
+  href?: string;
+  date?: string;
+  location?: string;
+  description: string[];
+}
 
+export interface EducationItem extends ResumeItem {}
+export interface ProjectItem extends ResumeItem {}
+export interface OpenSourceItem extends ResumeItem {}
+
+
+// PASSO 2: I tuoi dati, che ora usano i tipi definiti sopra.
 export const intro: Intro = {
   name: "Filippo Danesi",
-  // Ho reinserito la 'location', necessaria per il componente Intro.tsx
-  location: "Zurich, CH", 
+  location: "Zurich, CH",
   about:
     "SEO and Content Marketing Specialist with 6+ years of experience, focusing on strategic optimization for global brands across diverse international and local markets (GEO). I merge traditional SEO with generative AI and LLMs to engineer Answer Engine Optimization (AEO) and content intelligence solutions, scaling marketing efforts through automation.",
   href: "https://www.serp-secrets.com",
@@ -30,7 +44,7 @@ export const work: ResumeItem[] = [
       "Led SEO strategy for triumph.com and sloggi.com across 15+ international markets, with direct management of the DACH region.",
       "Spearheaded e-commerce optimizations for Distance Retail, enhancing product visibility and conversion funnels.",
       "Developed a global governance framework to streamline content production.",
-      "Engineered NLP/NLU and LLM pipelines to automate content analysis and scale content intelligence.", // Ritocco: verbo più forte e obiettivo finale
+      "Engineered NLP/NLU and LLM pipelines to automate content analysis and scale content intelligence.",
     ],
   },
   {
@@ -39,8 +53,8 @@ export const work: ResumeItem[] = [
     date: "2022 to 2024",
     location: "Mantova, IT",
     description: [
-      "Conducted 50+ technical and content audits for enterprise clients, identifying critical growth opportunities.", // Ritocco: aggiunge valore
-      "Developed proprietary AI-SEO workflows using GPT/Claude APIs to automate semantic analysis and keyword clustering.", // Ritocco: specifica i task automatizzati
+      "Conducted 50+ technical and content audits for enterprise clients, identifying critical growth opportunities.",
+      "Developed proprietary AI-SEO workflows using GPT/Claude APIs to automate semantic analysis and keyword clustering.",
       "Mentored a team of 5 junior SEOs on advanced technical SEO and AI-driven strategies.",
     ],
   },
@@ -50,7 +64,7 @@ export const work: ResumeItem[] = [
     date: "2020 to 2022",
     location: "Pisa, IT",
     description: [
-      "Designed intent-based content strategies that improved client keyword rankings by an average of 40% over 12 months.", // Ritocco: unisce due punti in uno più forte
+      "Designed intent-based content strategies that improved client keyword rankings by an average of 40% over 12 months.",
       "Created and presented performance dashboards for a portfolio of 20+ clients.",
       "Aligned SEO and PPC campaigns to maximize Return on Investment (ROI).",
     ],
@@ -62,7 +76,7 @@ export const work: ResumeItem[] = [
     location: "Pisa, IT",
     description: [
       "Optimized site architecture and technical performance for over 15 e-commerce clients.",
-      "Executed on-page and off-page strategies, securing 100+ high-quality backlinks.", // Ritocco: unisce due punti
+      "Executed on-page and off-page strategies, securing 100+ high-quality backlinks.",
       "Maintained a 95% client retention rate through clear communication and consistent results.",
     ],
   },

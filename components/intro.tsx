@@ -14,13 +14,27 @@ export function Intro({ intro }: IntroProps) {
 
   return (
     <section className="flex flex-col">
-      <h1 className="font-semibold tracking-tight fade-in-up !delay-100 mb-1">{intro.name}</h1>
-      
+      <h1 className="font-semibold tracking-tight fade-in-up !delay-100 mb-1">
+        {intro.name}
+      </h1>
+
       <h2 className="text-muted-foreground/70 tracking-tight fade-in-up !delay-200">
         SEO, AI & GEO Manager
       </h2>
 
-      <div className="dont-print flex gap-4 fade-in-up !delay-300 mt-4">
+      {/* NUOVA SEZIONE AGGIUNTA QUI */}
+      <div className="flex items-center gap-x-4 text-sm fade-in-up !delay-300 mt-2">
+        <span className="text-muted-foreground">{intro.location}</span>
+        <div className="flex items-center gap-x-2">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+          </span>
+          <span className="text-muted-foreground">Available for hire</span>
+        </div>
+      </div>
+
+      <div className="dont-print flex gap-4 fade-in-up !delay-400 mt-4">
         <a
           href={intro.href}
           target="_blank"
@@ -77,7 +91,7 @@ export function Intro({ intro }: IntroProps) {
         />
       </div>
 
-      <p className="text-muted-foreground max-w-prose fade-in-up !delay-400 mt-4">
+      <p className="text-muted-foreground max-w-prose fade-in-up !delay-500 mt-4">
         {intro.about}
       </p>
     </section>

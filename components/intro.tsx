@@ -71,7 +71,7 @@ export function Intro({ intro }: IntroProps) {
         </Copy>
 
         <DownloadPDF
-          pdfUrl="../Filippo_Danesi_SEO_AI_Manager_Resume.pdf"
+          pdfUrl="/Filippo_Danesi_SEO_AI_Manager_Resume.pdf"
           fileName="Filippo_Danesi_SEO_AI_Manager_Resume.pdf"
           className="text-muted-foreground hover:text-foreground transition-all"
         />

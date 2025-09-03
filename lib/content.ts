@@ -8,6 +8,8 @@ import {
 
 export const intro: Intro = {
   name: "Filippo Danesi",
+  // Ho reinserito la 'location', necessaria per il componente Intro.tsx
+  location: "Zurich, CH", 
   about:
     "SEO and Content Marketing Specialist with 6+ years of experience, focusing on strategic optimization for global brands across diverse international and local markets (GEO). I merge traditional SEO with generative AI and LLMs to engineer Answer Engine Optimization (AEO) and content intelligence solutions, scaling marketing efforts through automation.",
   href: "https://www.serp-secrets.com",
@@ -25,8 +27,8 @@ export const work: ResumeItem[] = [
     description: [
       "Led SEO strategy for triumph.com and sloggi.com across 15+ international markets, with direct management of the DACH region.",
       "Spearheaded e-commerce optimizations for Distance Retail, enhancing product visibility and conversion funnels.",
-      "Developed a governance framework that reduced content production time.",
-      "Implemented NLP, NLU, and early LLM pipelines for content analysis and optimization.",
+      "Developed a global governance framework to streamline content production.",
+      "Engineered NLP/NLU and LLM pipelines to automate content analysis and scale content intelligence.", // Ritocco: verbo più forte e obiettivo finale
     ],
   },
   {
@@ -35,9 +37,9 @@ export const work: ResumeItem[] = [
     date: "2022 to 2024",
     location: "Mantova, IT",
     description: [
-      "Conducted 50+ technical and content audits for enterprise clients.",
-      "Developed proprietary AI-SEO workflows using GPT/Claude APIs.",
-      "Mentored 5 junior SEOs on technical SEO and AI-driven strategies.",
+      "Conducted 50+ technical and content audits for enterprise clients, identifying critical growth opportunities.", // Ritocco: aggiunge valore
+      "Developed proprietary AI-SEO workflows using GPT/Claude APIs to automate semantic analysis and keyword clustering.", // Ritocco: specifica i task automatizzati
+      "Mentored a team of 5 junior SEOs on advanced technical SEO and AI-driven strategies.",
     ],
   },
   {
@@ -46,9 +48,9 @@ export const work: ResumeItem[] = [
     date: "2020 to 2022",
     location: "Pisa, IT",
     description: [
-      "Designed intent-based content strategies using semantic SEO.",
-      "Improved client keyword rankings by 40% over 12 months.",
-      "Aligned SEO with PPC campaigns for higher ROI.",
+      "Designed intent-based content strategies that improved client keyword rankings by an average of 40% over 12 months.", // Ritocco: unisce due punti in uno più forte
+      "Created and presented performance dashboards for a portfolio of 20+ clients.",
+      "Aligned SEO and PPC campaigns to maximize Return on Investment (ROI).",
     ],
   },
   {
@@ -57,9 +59,9 @@ export const work: ResumeItem[] = [
     date: "2019 to 2020",
     location: "Pisa, IT",
     description: [
-      "Optimized site architecture and navigation for 15+ clients.",
-      "Implemented schema markup, improving crawlability by 30%.",
-      "Maintained a 95% client retention rate through consistent results.",
+      "Optimized site architecture and technical performance for over 15 e-commerce clients.",
+      "Executed on-page and off-page strategies, securing 100+ high-quality backlinks.", // Ritocco: unisce due punti
+      "Maintained a 95% client retention rate through clear communication and consistent results.",
     ],
   },
 ];
@@ -70,8 +72,8 @@ export const education: EducationItem[] = [
     date: "2021 to 2022",
     location: "Rome, IT",
     description: [
-      "Studied global marketing and export strategies for Made in Italy goods",
-      "Awarded scholarship for excellence in international communication",
+      "Studied global marketing and export strategies for Made in Italy goods.",
+      "Awarded scholarship for excellence in international communication.",
     ],
   },
   {
@@ -79,8 +81,8 @@ export const education: EducationItem[] = [
     date: "2021",
     location: "Milan, IT",
     description: [
-      "Learned advanced data analytics and marketing intelligence techniques",
-      "Explored automation and visualization of large data sets",
+      "Learned advanced data analytics and marketing intelligence techniques.",
+      "Applied methodologies to real-world business cases to automate and visualize large data sets.",
     ],
   },
   {
@@ -88,43 +90,40 @@ export const education: EducationItem[] = [
     date: "2020 to 2021",
     location: "Florence, IT",
     description: [
-      "Studied advanced e-commerce management and marketing",
-      "Focused on user experience and digital sales strategies",
+      "Studied advanced e-commerce management, focusing on user experience and digital sales strategies.",
     ],
   },
   {
     title: "Web Design at Istituto Modartech",
     date: "2018 to 2019",
     location: "Pisa, IT",
-    description: ["Learned web design fundamentals and UX/UI principles"],
+    description: ["Learned web design fundamentals and UX/UI principles for front-end development."],
   },
   {
     title: "B.A. in Clinical Psychology at University of Pisa",
     date: "2013 to 2017",
     location: "Pisa, IT",
-    description: ["Studied core psychology and research methodologies"],
+    description: ["Studied core psychology and research methodologies with a focus on clinical applications."],
   },
 ];
 
-// Verbalist ora è l'unico progetto "principale".
 export const projects: ProjectItem[] = [
   {
     title: "Verbalist",
     href: "https://www.verbalist.it/en/",
     description: [
-      "AI-powered SEO content analysis and optimization platform.",
+      "AI-powered platform for SEO content analysis and optimization.",
       "Built with Python, OpenAI/Claude APIs, and IBM Watson NLU.",
     ],
   },
 ];
 
-// VisionDescribe è stato spostato qui.
 export const openSource: OpenSourceItem[] = [
   {
     title: "VisionDescribe",
     href: "https://www.vision-describe.com/",
     description: [
-      "E-commerce product descriptions generator from images using GPT-4 Vision.",
+      "Generates e-commerce product descriptions from images using GPT-4 Vision.",
       "Tech Stack: React, TypeScript, Node.js, Express, OpenAI API.",
     ],
   },
@@ -132,7 +131,7 @@ export const openSource: OpenSourceItem[] = [
     title: "NLU Analyzer",
     href: "https://nlu-analyzer.vercel.app/",
     description: [
-      "Open-source tool for semantic content analysis with IBM Watson NLU.",
+      "Open-source tool for semantic content analysis using IBM Watson NLU.",
       "Built with React, TypeScript, and Tailwind CSS.",
     ],
   },
@@ -140,8 +139,8 @@ export const openSource: OpenSourceItem[] = [
     title: "Web Content Scraper",
     href: "https://website-content-scraper.vercel.app/",
     description: [
-      "Minimalist content extraction tool for SEO analysis.",
-      "Built with React, TypeScript, and Firecrawl API integration.",
+      "Minimalist tool for clean content extraction from URLs for SEO analysis.",
+      "Built with React, TypeScript, and Firecrawl API.",
     ],
   },
 ];

@@ -25,7 +25,7 @@ export const intro: Intro = {
   name: "Filippo Danesi",
   location: "Zurich, CH",
   about:
-    "SEO and Content Marketing Specialist with 6+ years of experience, focusing on strategic optimization for global brands across diverse international and local markets (GEO). I merge traditional SEO with generative AI and LLMs to engineer Answer Engine Optimization (AEO) and content intelligence solutions, scaling marketing efforts through automation.",
+    "SEO and Content Marketing Specialist with 6+ years of experience, focusing on strategic optimization for global brands across international and local markets. I merge traditional SEO with generative AI and LLMs to engineer Generative Experience Optimization (GEO), Answer Engine Optimization (AEO) and content intelligence solutions, scaling marketing efforts through automation.",
   href: "https://www.serp-secrets.com",
   github: "https://github.com/filippodanesi",
   linkedin: "https://linkedin.com/in/filippodanesi",

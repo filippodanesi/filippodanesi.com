@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${intro.name} ~ SEO, AI & GEO Manager`,
+  title: `${intro.name} ~ SEO, AEO & AI Search (GEO)`,
   description: "SEO specialist combining data, AI, and content to drive search growth and deliver measurable results.",
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
           "name": "Filippo Danesi",
           "url": "https://www.filippodanesi.com/",
           "image": "https://www.filippodanesi.com/logo.svg",
-          "jobTitle": "SEO, AI and LLM Specialist",
+          "jobTitle": "SEO, AI & GEO Manager",
           "description": "SEO specialist combining data, AI, and content to drive search growth and deliver measurable results.",
           "email": "mailto:hello@filippodanesi.com",
           "sameAs": [
@@ -69,7 +69,9 @@ export default function RootLayout({
             "AI",
             "Machine Learning",
             "NLP",
-            "NLU"
+            "NLU",
+            "GEO",
+            "AEO"
           ],
           "skills": [
             "Technical SEO",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Newsreader } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./print.css";
 import { intro } from "@/lib/content";
@@ -14,11 +14,6 @@ const inter = Inter({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
-});
-
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-newsreader",
 });
 
 export const metadata: Metadata = {
@@ -106,7 +101,7 @@ export default function RootLayout({
         }) }} />
       </head>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} ${newsreader.variable} sm:p-12 antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} sm:p-12 antialiased`}
       >
         <PlausibleProvider domain="filippodanesi.com">
           {children}

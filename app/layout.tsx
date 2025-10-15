@@ -17,8 +17,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${intro.name} ~ SEO, AEO & AI Search (GEO)`,
-  description: "SEO specialist combining data, AI, and content to drive search growth and deliver measurable results.",
+  title: `${intro.name} ~ SEO & AI Search Strategy`,
+  description: "SEO & AI Search Strategiest. Over 6 years optimizing global brands through data science, automation, and LLM-driven tools that scale visibility across Google and AI search.",
 };
 
 export default function RootLayout({

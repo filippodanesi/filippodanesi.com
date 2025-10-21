@@ -4,7 +4,7 @@ import "./globals.css";
 import "./print.css";
 import { intro } from "@/lib/content";
 import { Toaster } from "sonner";
-import PlausibleProvider from "next-plausible";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -103,10 +103,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} sm:p-12 antialiased`}
       >
-        <PlausibleProvider domain="filippodanesi.com">
-          {children}
-          <Toaster position="top-right" />
-        </PlausibleProvider>
+        {children}
+        <Toaster position="top-right" />
+        <Analytics />
       </body>
     </html>
   );

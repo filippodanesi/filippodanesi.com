@@ -2,7 +2,7 @@
 
 import { Copy } from "@/components/copy";
 import { DownloadPDF } from "@/components/download";
-import { usePlausible } from "next-plausible";
+import { track } from "@vercel/analytics";
 import type { Intro as IntroType } from "@/lib/content";
 
 interface IntroProps {
@@ -10,8 +10,6 @@ interface IntroProps {
 }
 
 export function Intro({ intro }: IntroProps) {
-  const plausible = usePlausible();
-
   return (
     <section className="flex flex-col">
       <h1 className="font-semibold tracking-tight fade-in-up !delay-100 mb-1">
@@ -29,8 +27,9 @@ export function Intro({ intro }: IntroProps) {
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-all"
           onClick={() =>
-            plausible("Click Blog Link", {
-              props: { location: "header", target: intro.href },
+            track("Click Blog Link", {
+              location: "header",
+              target: intro.href,
             })
           }
         >
@@ -43,8 +42,9 @@ export function Intro({ intro }: IntroProps) {
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-all"
           onClick={() =>
-            plausible("Click Github Link", {
-              props: { location: "header", target: intro.github },
+            track("Click Github Link", {
+              location: "header",
+              target: intro.github,
             })
           }
         >
@@ -57,8 +57,9 @@ export function Intro({ intro }: IntroProps) {
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-all"
           onClick={() =>
-            plausible("Click LinkedIn Link", {
-              props: { location: "header", target: intro.linkedin },
+            track("Click LinkedIn Link", {
+              location: "header",
+              target: intro.linkedin,
             })
           }
         >

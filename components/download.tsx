@@ -1,7 +1,7 @@
 "use client";
 
 import { toast } from "sonner";
-import { usePlausible } from "next-plausible";
+import { track } from "@vercel/analytics";
 import { cn } from "@/lib/utils";
 
 type DownloadPDFProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -15,10 +15,8 @@ export function DownloadPDF({
   className,
   ...props
 }: DownloadPDFProps) {
-  const plausible = usePlausible();
-
   const handleDownload = async () => {
-    plausible("Download PDF", { props: { fileName } });
+    track("Download PDF", { fileName });
     const loadingToastId = toast.loading("Downloading PDF…");
 
     try {

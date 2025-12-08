@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-content">
-        <span className="footer-text">© 2025 Filippo Danesi · <Link href="/privacy" className="footer-link">Privacy</Link></span>
+        <span className="footer-text">© 2025 Filippo Danesi</span>
         <div className="social-links">
           <a href="https://linkedin.com/in/filippodanesi" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
           <span className="social-separator">·</span>

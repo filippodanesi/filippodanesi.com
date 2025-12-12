@@ -53,21 +53,93 @@ header {
     text-decoration: none;
 }
 
-nav {
+/* Desktop nav */
+.nav-desktop {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-nav a {
+.nav-desktop a {
     font-size: 14px;
     color: var(--text-muted);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-nav a:hover,
-nav a.active {
+.nav-desktop a:hover,
+.nav-desktop a.active {
+    color: var(--text);
+}
+
+/* Icon buttons in navigation */
+.nav-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-icon:hover {
+    color: var(--text);
+}
+
+.nav-icon svg {
+    display: block;
+}
+
+/* Mobile menu toggle - hidden on desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Mobile fullscreen menu */
+.nav-mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-mobile-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-mobile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 32px;
+}
+
+.nav-mobile-content a {
+    font-size: 16px;
+    color: var(--text-muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-mobile-content a:hover,
+.nav-mobile-content a.active {
     color: var(--text);
 }
 
@@ -249,6 +321,12 @@ footer {
     color: var(--text-muted);
 }
 
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 /* About Page */
 .page-title {
     font-size: 14px;
@@ -398,6 +476,22 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 640px) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: relative;
+        z-index: 999;
+    }
+
+    .nav-mobile-overlay {
+        display: block;
+    }
+}
+
 @media (max-width: 480px) {
     header {
         padding: 32px 0 24px;
@@ -407,12 +501,19 @@ footer {
         padding: 32px 0;
     }
 
-    nav {
-        gap: 16px;
-    }
-
     .experience-header {
         flex-direction: column;
         gap: 4px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .footer-right {
+        width: 100%;
+        justify-content: space-between;
     }
 }

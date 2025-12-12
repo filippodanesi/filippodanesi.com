@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h2 className="page-description">I'm an SEO & Content Marketing Specialist with 6+ years of experience. I combine data, AI, and content to drive search growth, merging traditional SEO with generative AI and LLMs.</h2>
+        <p className="page-description">I'm an SEO & Content Marketing Specialist with 6+ years of experience. I combine data, AI, and content to drive search growth, merging traditional SEO with generative AI and LLMs.</p>
       </section>
 
       <Clock />

@@ -349,6 +349,65 @@ footer {
     line-height: 1.6;
 }
 
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb:hover {
+    color: var(--text);
+}
+
+/* Project Page */
+.project-description {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+.feature-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.feature-list li {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.feature-list li:last-child {
+    margin-bottom: 0;
+}
+
+.feature-list li::marker {
+    color: var(--border);
+}
+
+.project-links {
+    display: flex;
+    gap: 16px;
+}
+
+.project-link {
+    font-size: 14px;
+    color: var(--text);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.project-link:hover {
+    opacity: 0.7;
+}
+
 .cv-button {
     display: inline-flex;
     align-items: center;

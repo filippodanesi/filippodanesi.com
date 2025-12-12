@@ -1,11 +1,12 @@
+import Link from 'next/link'
 import Clock from './components/Clock'
 
 const projects = [
-  { name: 'Verbalist', url: 'https://github.com/filippodanesi/verbalist' },
-  { name: 'VisionDescribe', url: 'https://github.com/filippodanesi/visiondescribe' },
-  { name: 'NLU Analyzer', url: 'https://github.com/filippodanesi/nlu-analyzer' },
-  { name: 'Web Content Scraper', url: 'https://github.com/filippodanesi/web-content-scraper' },
-  { name: 'Open Source', url: 'https://github.com/filippodanesi' },
+  { name: 'Verbalist', url: 'https://www.verbalist.it', external: true },
+  { name: 'AI Copy Assistant', url: '/projects/ai-copy-assistant', external: false },
+  { name: 'Vision Describe', url: '/projects/vision-describe', external: false },
+  { name: 'NLU Analyzer', url: '/projects/nlu-analyzer', external: false },
+  { name: 'Web Scraper', url: '/projects/web-scraper', external: false },
 ]
 
 export default function Home() {
@@ -33,10 +34,17 @@ export default function Home() {
         <h2>Projects</h2>
         <div className="project-list">
           {projects.map((project) => (
-            <a key={project.name} href={project.url} className="project-item" target="_blank" rel="noopener">
-              <span className="project-name">{project.name}</span>
-              <span className="project-arrow">→</span>
-            </a>
+            project.external ? (
+              <a key={project.name} href={project.url} className="project-item" target="_blank" rel="noopener">
+                <span className="project-name">{project.name}</span>
+                <span className="project-arrow">→</span>
+              </a>
+            ) : (
+              <Link key={project.name} href={project.url} className="project-item">
+                <span className="project-name">{project.name}</span>
+                <span className="project-arrow">→</span>
+              </Link>
+            )
           ))}
         </div>
       </section>

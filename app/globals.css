@@ -327,12 +327,26 @@ footer {
     gap: 16px;
 }
 
-/* About Page */
+/* Page Header */
+.page-header {
+    margin-bottom: 32px;
+}
+
 .page-title {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     color: var(--text);
+}
+
+.page-header .page-title {
+    margin-bottom: 8px;
+}
+
+.page-description {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
 }
 
 .cv-button {

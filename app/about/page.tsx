@@ -69,7 +69,9 @@ const contacts = [
 export default function About() {
   return (
     <>
-      <h1 className="page-title">About</h1>
+      <header className="page-header">
+        <h1 className="page-title">About</h1>
+      </header>
 
       <section className="section">
         <h2 className="section-title">Bio</h2>

@@ -11,7 +11,9 @@ export const metadata: Metadata = {
 export default function Privacy() {
   return (
     <>
-      <h1 className="page-title">Privacy</h1>
+      <header className="page-header">
+        <h1 className="page-title">Privacy</h1>
+      </header>
 
       <section className="section">
         <h2 className="section-title">Analytics</h2>

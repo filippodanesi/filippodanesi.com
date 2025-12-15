@@ -292,6 +292,7 @@ footer {
     font-size: 13px;
     color: var(--text-muted);
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .footer-link {

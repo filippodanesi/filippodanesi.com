@@ -153,6 +153,7 @@ header {
     justify-content: center;
     color: var(--text-muted);
     transition: color 0.2s ease;
+    flex-shrink: 0;
 }
 
 .theme-toggle:hover {
@@ -290,6 +291,7 @@ footer {
 .footer-text {
     font-size: 13px;
     color: var(--text-muted);
+    white-space: nowrap;
 }
 
 .footer-link {

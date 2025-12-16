@@ -125,15 +125,17 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 32px;
+    gap: 8px;
 }
 
 .nav-mobile-content a {
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: var(--text-muted);
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    padding: 12px 0;
     transition: color 0.2s ease;
     -webkit-tap-highlight-color: transparent;
 }

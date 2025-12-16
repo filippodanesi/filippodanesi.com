@@ -59,12 +59,6 @@ const skills = [
   'NLP/NLU',
 ]
 
-const contacts = [
-  { label: 'Email', value: 'hello@filippodanesi.com', href: 'mailto:hello@filippodanesi.com' },
-  { label: 'LinkedIn', value: 'filippodanesi', href: 'https://linkedin.com/in/filippodanesi' },
-  { label: 'GitHub', value: 'filippodanesi', href: 'https://github.com/filippodanesi' },
-  { label: 'Location', value: 'Zurich, CH', href: null },
-]
 
 export default function About() {
   return (
@@ -108,21 +102,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section">
-        <h2 className="section-title">Contact</h2>
-        {contacts.map((contact) => (
-          <div key={contact.label} className="contact-item">
-            <span className="contact-label">{contact.label}</span>
-            {contact.href ? (
-              <a href={contact.href} target={contact.href.startsWith('mailto') ? undefined : '_blank'} className="contact-value">
-                {contact.value}
-              </a>
-            ) : (
-              <span className="contact-value">{contact.value}</span>
-            )}
-          </div>
-        ))}
-      </section>
     </>
   )
 }

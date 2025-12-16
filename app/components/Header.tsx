@@ -34,6 +34,7 @@ export default function Header() {
         <nav className="nav-desktop">
           <Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
           <Link href="/projects" className={pathname.startsWith('/projects') ? 'active' : ''}>Projects</Link>
+          <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link>
           <a href="https://www.serp-secrets.com" target="_blank" rel="noopener">Blog</a>
         </nav>
 
@@ -64,6 +65,7 @@ export default function Header() {
         <nav className="nav-mobile-content">
           <Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
           <Link href="/projects" className={pathname.startsWith('/projects') ? 'active' : ''}>Projects</Link>
+          <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link>
           <a href="https://www.serp-secrets.com" target="_blank" rel="noopener">Blog</a>
         </nav>
       </div>

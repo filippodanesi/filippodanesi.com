@@ -32,9 +32,9 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="nav-desktop">
-          <a href="https://www.serp-secrets.com" target="_blank" rel="noopener">Blog</a>
-          <Link href="/projects" className={pathname.startsWith('/projects') ? 'active' : ''}>Projects</Link>
           <Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
+          <Link href="/projects" className={pathname.startsWith('/projects') ? 'active' : ''}>Projects</Link>
+          <a href="https://www.serp-secrets.com" target="_blank" rel="noopener">Blog</a>
         </nav>
 
         {/* Mobile menu toggle */}
@@ -62,9 +62,9 @@ export default function Header() {
       {/* Mobile fullscreen menu */}
       <div className={`nav-mobile-overlay ${menuOpen ? 'open' : ''}`}>
         <nav className="nav-mobile-content">
-          <a href="https://www.serp-secrets.com" target="_blank" rel="noopener">Blog</a>
-          <Link href="/projects" className={pathname.startsWith('/projects') ? 'active' : ''}>Projects</Link>
           <Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
+          <Link href="/projects" className={pathname.startsWith('/projects') ? 'active' : ''}>Projects</Link>
+          <a href="https://www.serp-secrets.com" target="_blank" rel="noopener">Blog</a>
         </nav>
       </div>
     </header>

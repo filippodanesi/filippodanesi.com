@@ -86,8 +86,8 @@ export default function RootLayout({
           <div className="container">
             <Header />
             <main>{children}</main>
+            <Footer />
           </div>
-          <Footer />
         </ThemeProvider>
         <Analytics />
       </body>

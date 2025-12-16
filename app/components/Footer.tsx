@@ -7,10 +7,19 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="container">
-        <div className="footer-content">
-          <span className="footer-text">© 2025 Filippo Danesi</span>
-          <button className="theme-toggle nav-icon" onClick={toggleTheme} aria-label="Toggle theme">
+      <div className="footer-content">
+        <span className="footer-text">
+          © 2025{' '}
+          <a
+            href="https://www.filippodanesi.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            Filippo Danesi
+          </a>
+        </span>
+        <button className="theme-toggle nav-icon" onClick={toggleTheme} aria-label="Toggle theme">
               {theme === 'dark' ? (
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <circle cx="12" cy="12" r="5" />
@@ -29,7 +38,6 @@ export default function Footer() {
                 </svg>
               )}
           </button>
-        </div>
       </div>
     </footer>
   )

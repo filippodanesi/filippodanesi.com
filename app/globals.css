@@ -292,6 +292,7 @@ footer {
 }
 
 .footer-link {
+    font-size: 13px;
     color: var(--text-muted);
     text-decoration: none;
     transition: color 0.2s ease;

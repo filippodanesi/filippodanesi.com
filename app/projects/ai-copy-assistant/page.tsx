@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'AI Copy Assistant',
-  description: 'Enterprise-grade AI-powered content generation for e-commerce, retail locations, and marketplace platforms.',
+  description: 'Generates product descriptions for e-commerce catalogs using GPT and Claude.',
   alternates: {
     canonical: 'https://www.filippodanesi.com/projects/ai-copy-assistant',
   },
@@ -15,13 +15,13 @@ export default function AICopyAssistant() {
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
         <h1 className="page-title">AI Copy Assistant</h1>
-        <p className="page-description">Enterprise-grade AI-powered content generation for e-commerce, retail locations, and marketplace platforms.</p>
+        <p className="page-description">Generates product descriptions for e-commerce catalogs using GPT and Claude.</p>
       </header>
 
       <section className="section">
         <h2 className="section-title">Overview</h2>
         <div className="section-content">
-          <p>Transform your product catalogs with AI-powered content generation, real-time cost tracking, and multi-language support.</p>
+          <p>Takes a product catalog (CSV or feed), sends each product to GPT or Claude, and returns optimized descriptions in multiple languages. Tracks API costs in real time.</p>
         </div>
       </section>
 

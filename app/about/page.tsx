@@ -3,45 +3,45 @@ import { Download } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn about Filippo Danesi - SEO and Content Marketing Specialist with 6+ years of experience in Technical SEO, AI integration, and content optimization.',
+  description: 'About Filippo Danesi. SEO specialist working on organic search and AI search visibility for enterprise e-commerce.',
   alternates: {
     canonical: 'https://www.filippodanesi.com/about',
   },
   openGraph: {
     title: 'About ~ Filippo Danesi',
-    description: 'Learn about Filippo Danesi - SEO and Content Marketing Specialist with 6+ years of experience.',
+    description: 'About Filippo Danesi. SEO specialist working on organic search and AI search visibility for enterprise e-commerce.',
     url: 'https://www.filippodanesi.com/about',
   },
 }
 
 const experiences = [
   {
-    role: 'SEO Content & AI Automation Manager',
+    role: 'SEO & AI Search Manager',
     company: 'Triumph International',
     location: 'Zurich, Switzerland',
     date: 'May 2025 — Present',
-    description: 'Leading AEO/GEO strategy across 15+ markets, building AI workflows that cut content production by 70%.',
+    description: 'I run organic search and AI search visibility for Triumph\'s e-commerce across EMEA (15+ domains). I also build internal tools that automate SEO processes the team can\'t handle manually.',
   },
   {
     role: 'SEO Specialist (Innovation Lead)',
     company: 'NUR Digital Marketing Agency',
     location: 'Mantua, Italy',
     date: 'Sep 2022 — Apr 2025',
-    description: 'Led AI-SEO innovation and mentored the tech team, driving 35% organic traffic growth in 6 months.',
+    description: 'SEO strategy for enterprise clients. I pushed AI and automation into the agency\'s workflow and led the innovation side of projects.',
   },
   {
     role: 'SEO Specialist',
     company: 'TeseCom Agency',
     location: 'Pisa, Italy',
     date: 'Sep 2020 — Sep 2022',
-    description: 'Managed SEO and SEM campaigns with a multichannel strategy approach for diverse clients.',
+    description: 'Full SEO management for B2B and B2C. This is where I got solid on the technical and analytical side of the job.',
   },
   {
     role: 'SEO Specialist',
     company: 'Brand-On Agency',
     location: 'Pisa, Italy',
     date: 'May 2019 — Sep 2020',
-    description: 'Specialized in e-commerce growth, optimizing online stores for organic visibility and conversions.',
+    description: 'My first SEO role. On-page, link building, local, the basics, done across a mix of SMB clients.',
   },
 ]
 
@@ -70,8 +70,8 @@ export default function About() {
       <section className="section">
         <h2 className="section-title">Bio</h2>
         <div className="section-content">
-          <p>SEO & GEO Manager with 6+ years of experience in strategic optimization for global brands across international markets. Merging traditional SEO with generative AI and LLMs to engineer Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), and content intelligence solutions.</p>
-          <p>Scaling marketing efforts through automation, reducing operational costs by 99%+ while enhancing search intent alignment and e-commerce performance.</p>
+          <p>I do SEO for enterprise e-commerce across EMEA (15+ domains). Most of my work lately is about making brands visible not just on Google, but inside AI search systems like ChatGPT, Perplexity, and AI Overviews.</p>
+          <p>I also build the tools I need. If a process is too slow or too manual, I write the code to automate it. That has cut content production costs significantly.</p>
         </div>
         <a href="/Filippo_Danesi_Resume.pdf" target="_blank" className="cv-button">
           <Download size={16} />

@@ -61,7 +61,7 @@ export async function GET() {
               margin: 0,
             }}
           >
-            SEO & AI Search Strategist
+            SEO & AI Search Manager
           </p>
         </div>
 
@@ -73,11 +73,11 @@ export async function GET() {
             color: '#a3a3a3',
           }}
         >
-          <span>AEO</span>
+          <span>SEO</span>
           <span>·</span>
-          <span>GEO</span>
+          <span>AI Search</span>
           <span>·</span>
-          <span>LLM Optimization</span>
+          <span>Automation</span>
         </div>
       </div>
     ),

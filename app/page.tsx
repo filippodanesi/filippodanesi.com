@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <p className="page-description">I'm an SEO & Content Marketing Specialist with 6+ years of experience. I combine data, AI, and content to drive search growth, merging traditional SEO with generative AI and LLMs.</p>
+        <p className="page-description">I'm an SEO specialist focused on making brands visible on Google and AI search engines. I also build tools that automate the parts of SEO that don't scale manually.</p>
       </section>
 
       <Clock />
@@ -22,7 +22,7 @@ export default function Home() {
         <p className="currently-label">Currently</p>
         <ul className="currently-list">
           <li className="currently-content">
-            SEO & AI Search Strategist (AEO/GEO) at <a href="https://en.wikipedia.org/wiki/Triumph_International" target="_blank" rel="noopener">Triumph International</a>
+            SEO & AI Search Manager at <a href="https://en.wikipedia.org/wiki/Triumph_International" target="_blank" rel="noopener">Triumph International</a>
           </li>
           <li className="currently-content">
             Ambassador <a href="https://www.semrush.com" target="_blank" rel="noopener">@Semrush</a>

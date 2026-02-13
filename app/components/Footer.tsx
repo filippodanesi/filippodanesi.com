@@ -9,7 +9,7 @@ export default function Footer() {
     <footer>
       <div className="footer-content">
         <span className="footer-text">
-          © 2025{' '}
+          © 2026{' '}
           <a
             href="https://www.filippodanesi.com"
             target="_blank"

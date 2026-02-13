@@ -10,7 +10,7 @@ export function PersonJsonLd() {
       'https://github.com/filippodanesi',
       'https://www.serp-secrets.com',
     ],
-    jobTitle: 'SEO & AI Search Strategist (AEO/GEO)',
+    jobTitle: 'SEO & AI Search Manager',
     worksFor: {
       '@type': 'Organization',
       name: 'Triumph International',
@@ -51,7 +51,7 @@ export function WebSiteJsonLd() {
     '@type': 'WebSite',
     name: 'Filippo Danesi',
     url: 'https://www.filippodanesi.com',
-    description: 'SEO and Content Marketing Specialist with 6+ years of experience. Combining data, AI, and content to drive search growth.',
+    description: 'SEO specialist focused on organic search and AI search visibility for enterprise e-commerce.',
     author: {
       '@type': 'Person',
       name: 'Filippo Danesi',

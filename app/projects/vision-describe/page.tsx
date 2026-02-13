@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Vision Describe',
-  description: 'AI-powered tool that generates professional product descriptions from images using GPT and Claude.',
+  description: 'Turns product images into multilingual descriptions using GPT and Claude vision APIs.',
   alternates: {
     canonical: 'https://www.filippodanesi.com/projects/vision-describe',
   },
@@ -15,13 +15,13 @@ export default function VisionDescribe() {
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
         <h1 className="page-title">Vision Describe</h1>
-        <p className="page-description">AI-powered tool that generates professional product descriptions from images.</p>
+        <p className="page-description">Turns product images into multilingual descriptions using GPT and Claude vision APIs.</p>
       </header>
 
       <section className="section">
         <h2 className="section-title">Overview</h2>
         <div className="section-content">
-          <p>Generate compelling, multilingual product content at scale from product images. Perfect for e-commerce businesses looking to create SEO-optimized descriptions.</p>
+          <p>Upload a product image, pick a language, get a description back. Useful when you have hundreds of products and no time to write copy for each one.</p>
         </div>
       </section>
 

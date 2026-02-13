@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Open source projects by Filippo Danesi - AI tools, SEO utilities, and web applications.',
+  description: 'Tools I built to automate parts of my SEO workflow.',
   alternates: {
     canonical: 'https://www.filippodanesi.com/projects',
   },
@@ -12,22 +12,22 @@ export const metadata: Metadata = {
 const projects = [
   {
     name: 'AI Copy Assistant',
-    description: 'Enterprise-grade AI-powered content generation for e-commerce and retail.',
+    description: 'Generates product descriptions for e-commerce catalogs using GPT and Claude.',
     slug: 'ai-copy-assistant',
   },
   {
     name: 'Vision Describe',
-    description: 'AI-powered product description generator from images.',
+    description: 'Turns product images into multilingual descriptions.',
     slug: 'vision-describe',
   },
   {
     name: 'NLU Analyzer',
-    description: 'Watson NLU & AI Text Optimizer for content analysis.',
+    description: 'Analyzes text with IBM Watson NLU, then suggests improvements with GPT/Claude.',
     slug: 'nlu-analyzer',
   },
   {
     name: 'Web Scraper',
-    description: 'Extract and analyze text content from any website.',
+    description: 'Pulls clean text from any URL. Useful for competitor analysis.',
     slug: 'web-scraper',
   },
 ]
@@ -37,7 +37,7 @@ export default function Projects() {
     <>
       <header className="page-header">
         <h1 className="page-title">Projects</h1>
-        <p className="page-description">Open source tools and applications.</p>
+        <p className="page-description">Tools I built to automate parts of my SEO workflow.</p>
       </header>
 
       <div className="project-list">

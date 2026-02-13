@@ -5,13 +5,13 @@ const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with Filippo Danesi. Reach out for collaborations, questions, or just to say hello.',
+  description: 'Contact Filippo Danesi.',
   alternates: {
     canonical: `${siteUrl}/contact`,
   },
   openGraph: {
     title: 'Contact ~ Filippo Danesi',
-    description: 'Get in touch with Filippo Danesi. Reach out for collaborations, questions, or just to say hello.',
+    description: 'Contact Filippo Danesi.',
     url: `${siteUrl}/contact`,
     type: 'website',
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Contact ~ Filippo Danesi',
-    description: 'Get in touch with Filippo Danesi. Reach out for collaborations, questions, or just to say hello.',
+    description: 'Contact Filippo Danesi.',
     images: ['/api/og?title=Contact'],
   },
 }
@@ -43,7 +43,7 @@ export default function ContactPage() {
       <header className="page-header">
         <h1 className="page-title">Contact</h1>
         <p className="page-description">
-          Feel free to reach out for collaborations, questions, or just to say hello.
+          Available for consulting, speaking, or general questions.
         </p>
       </header>
 

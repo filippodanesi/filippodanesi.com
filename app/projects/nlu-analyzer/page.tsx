@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'NLU Analyzer',
-  description: 'Watson NLU & AI Text Optimizer for analyzing and optimizing text content.',
+  description: 'Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.',
   alternates: {
     canonical: 'https://www.filippodanesi.com/projects/nlu-analyzer',
   },
@@ -15,13 +15,13 @@ export default function NLUAnalyzer() {
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
         <h1 className="page-title">NLU Analyzer</h1>
-        <p className="page-description">Watson NLU & AI Text Optimizer for content analysis and optimization.</p>
+        <p className="page-description">Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.</p>
       </header>
 
       <section className="section">
         <h2 className="section-title">Overview</h2>
         <div className="section-content">
-          <p>Analyze and optimize text content using IBM Watson's Natural Language Understanding combined with GPT and Claude models for AI-powered content improvement.</p>
+          <p>Paste any text, get a breakdown of keywords, entities, concepts, and categories from Watson NLU. Then use GPT or Claude to get rewrite suggestions based on the analysis.</p>
         </div>
       </section>
 

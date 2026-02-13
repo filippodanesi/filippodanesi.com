@@ -21,7 +21,7 @@ export default function WebScraper() {
       <section className="section">
         <h2 className="section-title">Overview</h2>
         <div className="section-content">
-          <p>Extract clean, formatted text content from any website by entering a URL. Useful for research, analysis, or content aggregation without the clutter of website styling.</p>
+          <p>Enter a URL, get the text back without ads, nav, or styling. I use it mainly for competitor content analysis.</p>
         </div>
       </section>
 

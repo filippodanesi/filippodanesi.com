@@ -73,7 +73,7 @@ export default function About() {
           <p>I do SEO for enterprise e-commerce across EMEA (15+ domains). Most of my work lately is about making brands visible not just on Google, but inside AI search systems like ChatGPT, Perplexity, and AI Overviews.</p>
           <p>I also build the tools I need. If a process is too slow or too manual, I write the code to automate it. That has cut content production costs significantly.</p>
         </div>
-        <a href="/Filippo_Danesi_Resume.pdf" target="_blank" className="cv-button">
+        <a href="/Filippo_Danesi_CV.pdf" target="_blank" className="cv-button">
           <Download size={16} />
           Download CV
         </a>

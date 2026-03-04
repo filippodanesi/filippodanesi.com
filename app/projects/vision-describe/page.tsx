@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Vision Describe',
-  description: 'Turns product images into multilingual descriptions using GPT and Claude vision APIs.',
+  title: 'VisionDescribe',
+  description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
   alternates: {
     canonical: 'https://www.filippodanesi.com/projects/vision-describe',
   },
@@ -14,14 +14,14 @@ export default function VisionDescribe() {
     <>
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
-        <h1 className="page-title">Vision Describe</h1>
-        <p className="page-description">Turns product images into multilingual descriptions using GPT and Claude vision APIs.</p>
+        <h1 className="page-title">VisionDescribe</h1>
+        <p className="page-description">AI-powered product copy generator for e-commerce and store locator platforms.</p>
       </header>
 
       <section className="section">
         <h2 className="section-title">Overview</h2>
         <div className="section-content">
-          <p>Upload a product image, pick a language, get a description back. Useful when you have hundreds of products and no time to write copy for each one.</p>
+          <p>Uses GPT and Claude to generate brand-compliant product descriptions, bullet points, and optimized copy for multiple e-commerce platforms — with real-time cost tracking and multi-language support. Handles large catalogs (1000+ items) with hybrid client-side and server-side pipelines.</p>
         </div>
       </section>
 
@@ -29,12 +29,14 @@ export default function VisionDescribe() {
         <h2 className="section-title">Features</h2>
         <div className="section-content">
           <ul className="feature-list">
-            <li>AI image analysis with GPT and Claude</li>
-            <li>Multilingual support for European languages</li>
-            <li>URL crawling for existing product descriptions</li>
-            <li>CSV batch translation</li>
-            <li>Category-specific content generation</li>
-            <li>GDPR compliant</li>
+            <li>Multi-platform support (e-commerce, Amazon, store locator)</li>
+            <li>Batch processing for large product catalogs</li>
+            <li>Real-time token usage and cost tracking</li>
+            <li>Image analysis with vision models</li>
+            <li>Color and size translation mappings</li>
+            <li>Content validation and policy compliance</li>
+            <li>Multi-language content generation (50+ languages)</li>
+            <li>Smart column detection and field mapping</li>
           </ul>
         </div>
       </section>
@@ -47,14 +49,15 @@ export default function VisionDescribe() {
           <span className="skill-tag">Vite</span>
           <span className="skill-tag">OpenAI</span>
           <span className="skill-tag">Anthropic</span>
-          <span className="skill-tag">Drizzle</span>
+          <span className="skill-tag">Supabase</span>
+          <span className="skill-tag">Vercel</span>
         </div>
       </section>
 
       <section className="section">
         <h2 className="section-title">Links</h2>
         <div className="project-links">
-          <a href="https://github.com/filippodanesi/vision-describe" target="_blank" rel="noopener" className="project-link">GitHub →</a>
+          <a href="https://github.com/filippodanesi/ai-copy-assistant" target="_blank" rel="noopener" className="project-link">GitHub →</a>
         </div>
       </section>
     </>

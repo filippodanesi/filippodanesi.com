@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    name: 'AI Copy Assistant',
-    description: 'Generates product descriptions for e-commerce catalogs using GPT and Claude.',
-    slug: 'ai-copy-assistant',
+    name: 'VisionDescribe',
+    description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
+    slug: 'vision-describe',
   },
   {
-    name: 'Vision Describe',
-    description: 'Turns product images into multilingual descriptions.',
-    slug: 'vision-describe',
+    name: 'SEOLinkr',
+    description: 'CLI tool for automated internal link insertion into blog articles.',
+    slug: 'seolinkr',
   },
   {
     name: 'NLU Analyzer',

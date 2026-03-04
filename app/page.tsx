@@ -3,8 +3,8 @@ import Clock from './components/Clock'
 
 const projects = [
   { name: 'Verbalist', url: 'https://www.verbalist.it', external: true },
-  { name: 'AI Copy Assistant', url: '/projects/ai-copy-assistant', external: false },
-  { name: 'Vision Describe', url: '/projects/vision-describe', external: false },
+  { name: 'VisionDescribe', url: '/projects/vision-describe', external: false },
+  { name: 'SEOLinkr', url: '/projects/seolinkr', external: false },
   { name: 'NLU Analyzer', url: '/projects/nlu-analyzer', external: false },
   { name: 'Web Scraper', url: '/projects/web-scraper', external: false },
 ]

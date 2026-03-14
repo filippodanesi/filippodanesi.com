@@ -17,7 +17,7 @@ const projects = [
   },
   {
     name: 'SEOLinkr',
-    description: 'CLI tool for automated internal link insertion into blog articles.',
+    description: 'CLI + web app for automated internal link insertion into blog articles.',
     slug: 'seolinkr',
   },
   {

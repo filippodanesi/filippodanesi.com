@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'SEOLinkr',
-  description: 'CLI tool for automated internal link insertion into blog articles.',
+  description: 'CLI + web app for automated internal link insertion into blog articles.',
   alternates: {
     canonical: 'https://www.filippodanesi.com/projects/seolinkr',
   },

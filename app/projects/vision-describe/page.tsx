@@ -1,11 +1,33 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const siteUrl = 'https://www.filippodanesi.com'
+
 export const metadata: Metadata = {
   title: 'VisionDescribe',
   description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
   alternates: {
-    canonical: 'https://www.filippodanesi.com/projects/vision-describe',
+    canonical: `${siteUrl}/projects/vision-describe`,
+  },
+  openGraph: {
+    title: 'VisionDescribe ~ Filippo Danesi',
+    description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
+    url: `${siteUrl}/projects/vision-describe`,
+    type: 'website',
+    images: [
+      {
+        url: '/api/og?title=VisionDescribe',
+        width: 1200,
+        height: 630,
+        alt: 'VisionDescribe ~ Filippo Danesi',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'VisionDescribe ~ Filippo Danesi',
+    description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
+    images: ['/api/og?title=VisionDescribe'],
   },
 }
 

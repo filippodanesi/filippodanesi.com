@@ -1,10 +1,32 @@
 import type { Metadata } from 'next'
 
+const siteUrl = 'https://www.filippodanesi.com'
+
 export const metadata: Metadata = {
   title: 'Privacy',
-  description: 'Privacy policy for filippodanesi.com',
+  description: 'Privacy policy for filippodanesi.com. Learn how analytics data is collected and used.',
   alternates: {
-    canonical: 'https://www.filippodanesi.com/privacy',
+    canonical: `${siteUrl}/privacy`,
+  },
+  openGraph: {
+    title: 'Privacy ~ Filippo Danesi',
+    description: 'Privacy policy for filippodanesi.com. Learn how analytics data is collected and used.',
+    url: `${siteUrl}/privacy`,
+    type: 'website',
+    images: [
+      {
+        url: '/api/og?title=Privacy',
+        width: 1200,
+        height: 630,
+        alt: 'Privacy ~ Filippo Danesi',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy ~ Filippo Danesi',
+    description: 'Privacy policy for filippodanesi.com. Learn how analytics data is collected and used.',
+    images: ['/api/og?title=Privacy'],
   },
 }
 

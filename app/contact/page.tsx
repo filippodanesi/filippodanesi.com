@@ -5,13 +5,13 @@ const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Contact Filippo Danesi.',
+  description: 'Get in touch with Filippo Danesi for consulting, speaking, or general questions about SEO and AI.',
   alternates: {
     canonical: `${siteUrl}/contact`,
   },
   openGraph: {
     title: 'Contact ~ Filippo Danesi',
-    description: 'Contact Filippo Danesi.',
+    description: 'Get in touch with Filippo Danesi for consulting, speaking, or general questions about SEO and AI.',
     url: `${siteUrl}/contact`,
     type: 'website',
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Contact ~ Filippo Danesi',
-    description: 'Contact Filippo Danesi.',
+    description: 'Get in touch with Filippo Danesi for consulting, speaking, or general questions about SEO and AI.',
     images: ['/api/og?title=Contact'],
   },
 }

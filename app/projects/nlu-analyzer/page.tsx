@@ -1,11 +1,33 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const siteUrl = 'https://www.filippodanesi.com'
+
 export const metadata: Metadata = {
   title: 'NLU Analyzer',
   description: 'Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.',
   alternates: {
-    canonical: 'https://www.filippodanesi.com/projects/nlu-analyzer',
+    canonical: `${siteUrl}/projects/nlu-analyzer`,
+  },
+  openGraph: {
+    title: 'NLU Analyzer ~ Filippo Danesi',
+    description: 'Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.',
+    url: `${siteUrl}/projects/nlu-analyzer`,
+    type: 'website',
+    images: [
+      {
+        url: '/api/og?title=NLU%20Analyzer',
+        width: 1200,
+        height: 630,
+        alt: 'NLU Analyzer ~ Filippo Danesi',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NLU Analyzer ~ Filippo Danesi',
+    description: 'Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.',
+    images: ['/api/og?title=NLU%20Analyzer'],
   },
 }
 

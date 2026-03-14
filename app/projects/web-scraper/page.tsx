@@ -1,11 +1,33 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const siteUrl = 'https://www.filippodanesi.com'
+
 export const metadata: Metadata = {
   title: 'Web Scraper',
   description: 'Extract and analyze clean text content from any website.',
   alternates: {
-    canonical: 'https://www.filippodanesi.com/projects/web-scraper',
+    canonical: `${siteUrl}/projects/web-scraper`,
+  },
+  openGraph: {
+    title: 'Web Scraper ~ Filippo Danesi',
+    description: 'Extract and analyze clean text content from any website.',
+    url: `${siteUrl}/projects/web-scraper`,
+    type: 'website',
+    images: [
+      {
+        url: '/api/og?title=Web%20Scraper',
+        width: 1200,
+        height: 630,
+        alt: 'Web Scraper ~ Filippo Danesi',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Web Scraper ~ Filippo Danesi',
+    description: 'Extract and analyze clean text content from any website.',
+    images: ['/api/og?title=Web%20Scraper'],
   },
 }
 

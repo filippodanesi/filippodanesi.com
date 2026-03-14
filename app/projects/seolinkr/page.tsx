@@ -1,11 +1,33 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const siteUrl = 'https://www.filippodanesi.com'
+
 export const metadata: Metadata = {
   title: 'SEOLinkr',
   description: 'CLI + web app for automated internal link insertion into blog articles.',
   alternates: {
-    canonical: 'https://www.filippodanesi.com/projects/seolinkr',
+    canonical: `${siteUrl}/projects/seolinkr`,
+  },
+  openGraph: {
+    title: 'SEOLinkr ~ Filippo Danesi',
+    description: 'CLI + web app for automated internal link insertion into blog articles.',
+    url: `${siteUrl}/projects/seolinkr`,
+    type: 'website',
+    images: [
+      {
+        url: '/api/og?title=SEOLinkr',
+        width: 1200,
+        height: 630,
+        alt: 'SEOLinkr ~ Filippo Danesi',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SEOLinkr ~ Filippo Danesi',
+    description: 'CLI + web app for automated internal link insertion into blog articles.',
+    images: ['/api/og?title=SEOLinkr'],
   },
 }
 

@@ -15,7 +15,7 @@ export default function SEOLinkr() {
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
         <h1 className="page-title">SEOLinkr</h1>
-        <p className="page-description">CLI tool for automated internal link insertion into blog articles.</p>
+        <p className="page-description">CLI + web app for automated internal link insertion into blog articles.</p>
       </header>
 
       <section className="section">

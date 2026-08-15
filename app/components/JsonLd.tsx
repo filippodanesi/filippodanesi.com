@@ -16,17 +16,43 @@ export function PersonJsonLd() {
       name: 'Triumph International',
       url: 'https://en.wikipedia.org/wiki/Triumph_International',
     },
-    alumniOf: [],
+    alumniOf: [
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'University of Pisa',
+        sameAs: 'https://en.wikipedia.org/wiki/University_of_Pisa',
+      },
+      {
+        '@type': 'EducationalOrganization',
+        name: 'IED European Institute of Design',
+        sameAs: 'https://en.wikipedia.org/wiki/Istituto_Europeo_di_Design',
+      },
+      {
+        '@type': 'EducationalOrganization',
+        name: '24ORE Business School',
+      },
+      {
+        '@type': 'EducationalOrganization',
+        name: 'Centro Studi Comunicare l\'Impresa',
+      },
+      {
+        '@type': 'EducationalOrganization',
+        name: 'Istituto Modartech',
+      },
+    ],
     knowsAbout: [
       'SEO',
       'Content Marketing',
       'Technical SEO',
+      'International SEO',
       'AI',
       'LLM',
       'NLP',
       'NLU',
       'GEO',
       'AEO',
+      'App Store Optimization',
+      'Structured Data',
       'Python',
     ],
     address: {

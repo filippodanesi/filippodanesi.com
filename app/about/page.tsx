@@ -20,14 +20,21 @@ const experiences = [
     company: 'Triumph International',
     location: 'Zurich, Switzerland',
     date: 'May 2025 — Present',
-    description: 'I run organic search and AI search visibility for Triumph\'s e-commerce across EMEA (15+ domains). I also build internal tools that automate SEO processes the team can\'t handle manually.',
+    description: 'I run organic and AI search for Triumph across 15+ sites in EMEA and APAC. I built the tracker that tells us whether ChatGPT, Perplexity, Gemini and Claude actually mention us, and who they cite instead. I also own ASO for the Triumph app, which I took from pre-launch to publication on both stores, and the AI pipeline that writes product copy for 10,000+ SKUs.',
+  },
+  {
+    role: 'Product Owner — Verbalist',
+    company: 'NUR Digital Marketing Agency',
+    location: 'Mantua, Italy',
+    date: 'May 2025 — Present',
+    description: 'I own the roadmap for an AI content-generation SaaS, run the pre-sales calls, and reworked the pricing twice until it made sense.',
   },
   {
     role: 'SEO Specialist (Innovation Lead)',
     company: 'NUR Digital Marketing Agency',
     location: 'Mantua, Italy',
     date: 'Sep 2022 — Apr 2025',
-    description: 'SEO strategy for enterprise clients. I pushed AI and automation into the agency\'s workflow and led the innovation side of projects.',
+    description: 'SEO strategy for enterprise clients, mostly technical work on Adobe Experience Manager and the other big CMS platforms. I pushed AI and automation into the agency\'s workflow and led the innovation side of projects.',
   },
   {
     role: 'SEO Specialist',
@@ -51,12 +58,50 @@ const skills = [
   'LLM Optimization',
   'RAG',
   'Python',
+  'SQL',
   'AEO',
   'GEO',
   'Technical SEO',
+  'International SEO',
+  'Structured Data',
+  'ASO',
+  'Digital PR',
   'AI Automation',
   'SEO',
   'NLP/NLU',
+]
+
+const education = [
+  {
+    degree: 'Executive Master, Global Marketing, Communication & Made in Italy',
+    school: 'Centro Studi Comunicare l\'Impresa',
+    location: 'Rome',
+    date: '2021 — 2022',
+  },
+  {
+    degree: 'Executive Master, Data Analytics and Marketing Intelligence',
+    school: '24ORE Business School',
+    location: 'Milan',
+    date: '2021',
+  },
+  {
+    degree: 'Executive Master, E-commerce: Design and Management',
+    school: 'IED European Institute of Design',
+    location: 'Pisa',
+    date: '2020 — 2021',
+  },
+  {
+    degree: 'Higher Technical Certificate, Web Development & Programming',
+    school: 'Istituto Modartech',
+    location: 'Pontedera',
+    date: '2018 — 2019',
+  },
+  {
+    degree: 'BSc Clinical Psychology',
+    school: 'University of Pisa',
+    location: 'Pisa',
+    date: '2013 — 2017',
+  },
 ]
 
 
@@ -70,7 +115,7 @@ export default function About() {
       <section className="section">
         <h2 className="section-title">Bio</h2>
         <div className="section-content">
-          <p>I do SEO for enterprise e-commerce across EMEA (15+ domains). Most of my work lately is about making brands visible not just on Google, but inside AI search systems like ChatGPT, Perplexity, and AI Overviews.</p>
+          <p>I do SEO for enterprise e-commerce across EMEA and APAC (15+ domains). Most of my work lately is about making brands visible not just on Google, but inside AI search systems like ChatGPT, Perplexity, and AI Overviews, and measuring whether any of it actually lands.</p>
           <p>I also build the tools I need. If a process is too slow or too manual, I write the code to automate it. That has cut content production costs significantly.</p>
         </div>
         <a href="/Filippo_Danesi_CV.pdf" target="_blank" className="cv-button">
@@ -89,6 +134,19 @@ export default function About() {
             </div>
             <div className="experience-company">{exp.company} · {exp.location}</div>
             <p className="experience-description">{exp.description}</p>
+          </div>
+        ))}
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">Education</h2>
+        {education.map((edu, index) => (
+          <div key={index} className="experience-item education-item">
+            <div className="experience-header">
+              <span className="experience-role">{edu.degree}</span>
+              <span className="experience-date">{edu.date}</span>
+            </div>
+            <div className="experience-company">{edu.school} · {edu.location}</div>
           </div>
         ))}
       </section>

@@ -507,6 +507,10 @@ footer {
     line-height: 1.6;
 }
 
+.education-item .experience-company {
+    margin-bottom: 0;
+}
+
 /* Skills */
 .skills-list {
     display: flex;

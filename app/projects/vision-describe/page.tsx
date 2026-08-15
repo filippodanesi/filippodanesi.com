@@ -5,14 +5,16 @@ import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/Jso
 const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
-  title: 'VisionDescribe',
-  description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
+  title: {
+    absolute: 'VisionDescribe: AI product copy from images ~ Filippo Danesi',
+  },
+  description: 'Turns product images into multilingual product copy for e-commerce and store-locator platforms. Built with GPT-4 Vision for very large catalogues.',
   alternates: {
     canonical: `${siteUrl}/projects/vision-describe`,
   },
   openGraph: {
-    title: 'VisionDescribe ~ Filippo Danesi',
-    description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
+    title: 'VisionDescribe: AI product copy from images ~ Filippo Danesi',
+    description: 'Turns product images into multilingual product copy for e-commerce and store-locator platforms. Built with GPT-4 Vision for very large catalogues.',
     url: `${siteUrl}/projects/vision-describe`,
     type: 'website',
     images: [
@@ -20,14 +22,14 @@ export const metadata: Metadata = {
         url: '/api/og?title=VisionDescribe',
         width: 1200,
         height: 630,
-        alt: 'VisionDescribe ~ Filippo Danesi',
+        alt: 'VisionDescribe: AI product copy from images ~ Filippo Danesi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'VisionDescribe ~ Filippo Danesi',
-    description: 'AI-powered product copy generator for e-commerce and store locator platforms.',
+    title: 'VisionDescribe: AI product copy from images ~ Filippo Danesi',
+    description: 'Turns product images into multilingual product copy for e-commerce and store-locator platforms. Built with GPT-4 Vision for very large catalogues.',
     images: ['/api/og?title=VisionDescribe'],
   },
 }

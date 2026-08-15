@@ -4,14 +4,16 @@ import { BreadcrumbJsonLd, ContactPageJsonLd } from '../components/JsonLd'
 const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch with Filippo Danesi for consulting, speaking, or general questions about SEO and AI.',
+  title: {
+    absolute: 'Contact: SEO and AI search consulting ~ Filippo Danesi',
+  },
+  description: 'Get in touch with Filippo Danesi about SEO and AI search consulting, speaking engagements, or general questions. Email, LinkedIn, and GitHub, all in one place.',
   alternates: {
     canonical: `${siteUrl}/contact`,
   },
   openGraph: {
-    title: 'Contact ~ Filippo Danesi',
-    description: 'Get in touch with Filippo Danesi for consulting, speaking, or general questions about SEO and AI.',
+    title: 'Contact: SEO and AI search consulting ~ Filippo Danesi',
+    description: 'Get in touch with Filippo Danesi about SEO and AI search consulting, speaking engagements, or general questions. Email, LinkedIn, and GitHub, all in one place.',
     url: `${siteUrl}/contact`,
     type: 'website',
     images: [
@@ -19,14 +21,14 @@ export const metadata: Metadata = {
         url: '/api/og?title=Contact',
         width: 1200,
         height: 630,
-        alt: 'Contact ~ Filippo Danesi',
+        alt: 'Contact: SEO and AI search consulting ~ Filippo Danesi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact ~ Filippo Danesi',
-    description: 'Get in touch with Filippo Danesi for consulting, speaking, or general questions about SEO and AI.',
+    title: 'Contact: SEO and AI search consulting ~ Filippo Danesi',
+    description: 'Get in touch with Filippo Danesi about SEO and AI search consulting, speaking engagements, or general questions. Email, LinkedIn, and GitHub, all in one place.',
     images: ['/api/og?title=Contact'],
   },
 }

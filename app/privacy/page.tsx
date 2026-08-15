@@ -3,14 +3,16 @@ import type { Metadata } from 'next'
 const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
-  title: 'Privacy',
-  description: 'Privacy policy for filippodanesi.com. Learn how analytics data is collected and used.',
+  title: {
+    absolute: 'Privacy policy: analytics and data ~ Filippo Danesi',
+  },
+  description: 'How filippodanesi.com handles analytics. Vercel Analytics collects anonymous traffic data only: no cookies, no personal data, nothing that identifies a visitor.',
   alternates: {
     canonical: `${siteUrl}/privacy`,
   },
   openGraph: {
-    title: 'Privacy ~ Filippo Danesi',
-    description: 'Privacy policy for filippodanesi.com. Learn how analytics data is collected and used.',
+    title: 'Privacy policy: analytics and data ~ Filippo Danesi',
+    description: 'How filippodanesi.com handles analytics. Vercel Analytics collects anonymous traffic data only: no cookies, no personal data, nothing that identifies a visitor.',
     url: `${siteUrl}/privacy`,
     type: 'website',
     images: [
@@ -18,14 +20,14 @@ export const metadata: Metadata = {
         url: '/api/og?title=Privacy',
         width: 1200,
         height: 630,
-        alt: 'Privacy ~ Filippo Danesi',
+        alt: 'Privacy policy: analytics and data ~ Filippo Danesi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Privacy ~ Filippo Danesi',
-    description: 'Privacy policy for filippodanesi.com. Learn how analytics data is collected and used.',
+    title: 'Privacy policy: analytics and data ~ Filippo Danesi',
+    description: 'How filippodanesi.com handles analytics. Vercel Analytics collects anonymous traffic data only: no cookies, no personal data, nothing that identifies a visitor.',
     images: ['/api/og?title=Privacy'],
   },
 }

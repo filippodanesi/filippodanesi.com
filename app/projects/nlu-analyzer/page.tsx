@@ -5,14 +5,16 @@ import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/Jso
 const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
-  title: 'NLU Analyzer',
-  description: 'Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.',
+  title: {
+    absolute: 'NLU Analyzer: text analysis with Watson NLU ~ Filippo Danesi',
+  },
+  description: 'Analyzes text with IBM Watson Natural Language Understanding, then suggests concrete improvements with GPT and Claude. Built for content and SEO work.',
   alternates: {
     canonical: `${siteUrl}/projects/nlu-analyzer`,
   },
   openGraph: {
-    title: 'NLU Analyzer ~ Filippo Danesi',
-    description: 'Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.',
+    title: 'NLU Analyzer: text analysis with Watson NLU ~ Filippo Danesi',
+    description: 'Analyzes text with IBM Watson Natural Language Understanding, then suggests concrete improvements with GPT and Claude. Built for content and SEO work.',
     url: `${siteUrl}/projects/nlu-analyzer`,
     type: 'website',
     images: [
@@ -20,14 +22,14 @@ export const metadata: Metadata = {
         url: '/api/og?title=NLU%20Analyzer',
         width: 1200,
         height: 630,
-        alt: 'NLU Analyzer ~ Filippo Danesi',
+        alt: 'NLU Analyzer: text analysis with Watson NLU ~ Filippo Danesi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NLU Analyzer ~ Filippo Danesi',
-    description: 'Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.',
+    title: 'NLU Analyzer: text analysis with Watson NLU ~ Filippo Danesi',
+    description: 'Analyzes text with IBM Watson Natural Language Understanding, then suggests concrete improvements with GPT and Claude. Built for content and SEO work.',
     images: ['/api/og?title=NLU%20Analyzer'],
   },
 }
@@ -53,7 +55,7 @@ export default function NLUAnalyzer() {
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
         <h1 className="page-title">NLU Analyzer</h1>
-        <p className="page-description">Analyzes text with IBM Watson NLU and suggests improvements using GPT and Claude.</p>
+        <p className="page-description">Analyzes text with IBM Watson Natural Language Understanding, then suggests concrete improvements with GPT and Claude. Built for content and SEO work.</p>
       </header>
 
       <section className="section">

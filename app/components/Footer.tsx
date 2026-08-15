@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useTheme } from './ThemeProvider'
 
 export default function Footer() {
@@ -10,14 +11,13 @@ export default function Footer() {
       <div className="footer-content">
         <span className="footer-text">
           © {new Date().getFullYear()}{' '}
-          <a
-            href="https://www.filippodanesi.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-link"
-          >
+          <Link href="/" className="footer-link">
             Filippo Danesi
-          </a>
+          </Link>
+          {' · '}
+          <Link href="/privacy" className="footer-link">
+            Privacy
+          </Link>
         </span>
         <button className="theme-toggle nav-icon" onClick={toggleTheme} aria-label="Toggle theme">
               {theme === 'dark' ? (

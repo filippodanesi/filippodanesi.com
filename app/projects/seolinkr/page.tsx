@@ -5,14 +5,16 @@ import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/Jso
 const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
-  title: 'SEOLinkr',
-  description: 'CLI + web app for automated internal link insertion into blog articles.',
+  title: {
+    absolute: 'SEOLinkr: automated internal linking ~ Filippo Danesi',
+  },
+  description: 'A CLI and web app that inserts semantically relevant internal links into blog articles, using embeddings, Google Search Console data, and the Claude API.',
   alternates: {
     canonical: `${siteUrl}/projects/seolinkr`,
   },
   openGraph: {
-    title: 'SEOLinkr ~ Filippo Danesi',
-    description: 'CLI + web app for automated internal link insertion into blog articles.',
+    title: 'SEOLinkr: automated internal linking ~ Filippo Danesi',
+    description: 'A CLI and web app that inserts semantically relevant internal links into blog articles, using embeddings, Google Search Console data, and the Claude API.',
     url: `${siteUrl}/projects/seolinkr`,
     type: 'website',
     images: [
@@ -20,14 +22,14 @@ export const metadata: Metadata = {
         url: '/api/og?title=SEOLinkr',
         width: 1200,
         height: 630,
-        alt: 'SEOLinkr ~ Filippo Danesi',
+        alt: 'SEOLinkr: automated internal linking ~ Filippo Danesi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SEOLinkr ~ Filippo Danesi',
-    description: 'CLI + web app for automated internal link insertion into blog articles.',
+    title: 'SEOLinkr: automated internal linking ~ Filippo Danesi',
+    description: 'A CLI and web app that inserts semantically relevant internal links into blog articles, using embeddings, Google Search Console data, and the Claude API.',
     images: ['/api/og?title=SEOLinkr'],
   },
 }

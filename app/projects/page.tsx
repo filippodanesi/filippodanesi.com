@@ -5,14 +5,16 @@ import { BreadcrumbJsonLd, ProjectsCollectionJsonLd } from '../components/JsonLd
 const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Tools I built to automate parts of my SEO workflow.',
+  title: {
+    absolute: 'Projects: open-source SEO and AI tools ~ Filippo Danesi',
+  },
+  description: 'Open-source tools I built to automate the parts of SEO that don\'t scale by hand: internal linking, product copy from images, text analysis, and scraping.',
   alternates: {
     canonical: `${siteUrl}/projects`,
   },
   openGraph: {
-    title: 'Projects ~ Filippo Danesi',
-    description: 'Tools I built to automate parts of my SEO workflow.',
+    title: 'Projects: open-source SEO and AI tools ~ Filippo Danesi',
+    description: 'Open-source tools I built to automate the parts of SEO that don\'t scale by hand: internal linking, product copy from images, text analysis, and scraping.',
     url: `${siteUrl}/projects`,
     type: 'website',
     images: [
@@ -20,14 +22,14 @@ export const metadata: Metadata = {
         url: '/api/og?title=Projects',
         width: 1200,
         height: 630,
-        alt: 'Projects ~ Filippo Danesi',
+        alt: 'Projects: open-source SEO and AI tools ~ Filippo Danesi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Projects ~ Filippo Danesi',
-    description: 'Tools I built to automate parts of my SEO workflow.',
+    title: 'Projects: open-source SEO and AI tools ~ Filippo Danesi',
+    description: 'Open-source tools I built to automate the parts of SEO that don\'t scale by hand: internal linking, product copy from images, text analysis, and scraping.',
     images: ['/api/og?title=Projects'],
   },
 }

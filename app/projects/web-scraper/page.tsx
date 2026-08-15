@@ -5,14 +5,16 @@ import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/Jso
 const siteUrl = 'https://www.filippodanesi.com'
 
 export const metadata: Metadata = {
-  title: 'Web Scraper',
-  description: 'Extract and analyze clean text content from any website.',
+  title: {
+    absolute: 'Web Scraper: clean text from any URL ~ Filippo Danesi',
+  },
+  description: 'Extracts clean, formatted text from any URL, stripped of navigation and boilerplate. Useful for competitor analysis and for feeding content into LLMs.',
   alternates: {
     canonical: `${siteUrl}/projects/web-scraper`,
   },
   openGraph: {
-    title: 'Web Scraper ~ Filippo Danesi',
-    description: 'Extract and analyze clean text content from any website.',
+    title: 'Web Scraper: clean text from any URL ~ Filippo Danesi',
+    description: 'Extracts clean, formatted text from any URL, stripped of navigation and boilerplate. Useful for competitor analysis and for feeding content into LLMs.',
     url: `${siteUrl}/projects/web-scraper`,
     type: 'website',
     images: [
@@ -20,14 +22,14 @@ export const metadata: Metadata = {
         url: '/api/og?title=Web%20Scraper',
         width: 1200,
         height: 630,
-        alt: 'Web Scraper ~ Filippo Danesi',
+        alt: 'Web Scraper: clean text from any URL ~ Filippo Danesi',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Scraper ~ Filippo Danesi',
-    description: 'Extract and analyze clean text content from any website.',
+    title: 'Web Scraper: clean text from any URL ~ Filippo Danesi',
+    description: 'Extracts clean, formatted text from any URL, stripped of navigation and boilerplate. Useful for competitor analysis and for feeding content into LLMs.',
     images: ['/api/og?title=Web%20Scraper'],
   },
 }
@@ -53,7 +55,7 @@ export default function WebScraper() {
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
         <h1 className="page-title">Web Scraper</h1>
-        <p className="page-description">Extract and analyze clean text content from any website.</p>
+        <p className="page-description">Extracts clean, formatted text from any URL, stripped of navigation and boilerplate. Useful for competitor analysis and for feeding content into LLMs.</p>
       </header>
 
       <section className="section">

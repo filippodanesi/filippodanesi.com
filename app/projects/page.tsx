@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BreadcrumbJsonLd } from '../components/JsonLd'
+import { BreadcrumbJsonLd, ProjectsCollectionJsonLd } from '../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -64,6 +64,7 @@ export default function Projects() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <ProjectsCollectionJsonLd projects={projects} />
 
       <header className="page-header">
         <h1 className="page-title">Projects</h1>

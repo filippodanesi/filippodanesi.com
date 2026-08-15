@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BreadcrumbJsonLd } from '../../components/JsonLd'
+import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -42,6 +42,13 @@ export default function NLUAnalyzer() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <SoftwareSourceCodeJsonLd
+        name="NLU Analyzer"
+        description="Analyzes text with IBM Watson NLU, then suggests improvements with GPT/Claude."
+        slug="nlu-analyzer"
+        codeRepository="https://github.com/filippodanesi/nlu-analyzer"
+        programmingLanguage={['TypeScript']}
+      />
 
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>

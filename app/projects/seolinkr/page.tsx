@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BreadcrumbJsonLd } from '../../components/JsonLd'
+import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -42,6 +42,13 @@ export default function SEOLinkr() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <SoftwareSourceCodeJsonLd
+        name="SEOLinkr"
+        description="CLI + web app for automated internal link insertion into blog articles."
+        slug="seolinkr"
+        codeRepository="https://github.com/filippodanesi/seolinkr"
+        programmingLanguage={['Python', 'TypeScript']}
+      />
 
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>

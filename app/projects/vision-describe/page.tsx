@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BreadcrumbJsonLd } from '../../components/JsonLd'
+import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -42,6 +42,13 @@ export default function VisionDescribe() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <SoftwareSourceCodeJsonLd
+        name="VisionDescribe"
+        description="AI-powered product copy generator for e-commerce and store locator platforms."
+        slug="vision-describe"
+        codeRepository="https://github.com/filippodanesi/vision-describe"
+        programmingLanguage={['TypeScript']}
+      />
 
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
@@ -88,7 +95,7 @@ export default function VisionDescribe() {
       <section className="section">
         <h2 className="section-title">Links</h2>
         <div className="project-links">
-          <a href="https://github.com/filippodanesi/ai-copy-assistant" target="_blank" rel="noopener" className="project-link">GitHub →</a>
+          <a href="https://github.com/filippodanesi/vision-describe" target="_blank" rel="noopener" className="project-link">GitHub →</a>
         </div>
       </section>
     </>

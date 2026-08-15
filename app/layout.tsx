@@ -29,12 +29,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  // No hreflang: the site is English-only, so a self-referencing en/x-default
+  // pair carries no information. Add languages back here (and per page) if a
+  // localised version ever ships.
   alternates: {
     canonical: siteUrl,
-    languages: {
-      'x-default': siteUrl,
-      'en': siteUrl,
-    },
   },
   openGraph: {
     type: 'website',

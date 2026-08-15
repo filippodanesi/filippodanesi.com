@@ -1,62 +1,26 @@
 import type { MetadataRoute } from 'next'
+import { contentDates } from './content-dates'
+
+const baseUrl = 'https://www.filippodanesi.com'
+
+// changeFrequency and priority are ignored by Google, so only lastModified
+// is declared here, and it comes from the real content dates.
+const routes: { path: string; priority: number }[] = [
+  { path: '/', priority: 1 },
+  { path: '/about', priority: 0.8 },
+  { path: '/projects', priority: 0.7 },
+  { path: '/projects/vision-describe', priority: 0.6 },
+  { path: '/projects/seolinkr', priority: 0.6 },
+  { path: '/projects/nlu-analyzer', priority: 0.6 },
+  { path: '/projects/web-scraper', priority: 0.6 },
+  { path: '/contact', priority: 0.5 },
+  { path: '/privacy', priority: 0.3 },
+]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.filippodanesi.com'
-
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/projects`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/projects/vision-describe`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/projects/seolinkr`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/projects/nlu-analyzer`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/projects/web-scraper`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-  ]
+  return routes.map(({ path, priority }) => ({
+    url: path === '/' ? baseUrl : `${baseUrl}${path}`,
+    lastModified: contentDates[path],
+    priority,
+  }))
 }

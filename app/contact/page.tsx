@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { BreadcrumbJsonLd } from '../components/JsonLd'
+import { BreadcrumbJsonLd, ContactPageJsonLd } from '../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -40,6 +40,7 @@ export default function ContactPage() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <ContactPageJsonLd />
       <header className="page-header">
         <h1 className="page-title">Contact</h1>
         <p className="page-description">

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Download } from 'lucide-react'
-import { BreadcrumbJsonLd } from '../components/JsonLd'
+import { BreadcrumbJsonLd, ProfilePageJsonLd } from '../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 const description = 'SEO & AI Search Manager at Triumph International. 15+ sites across EMEA and APAC, an in-house LLM visibility tracker, and the tools behind both.'
@@ -135,6 +135,7 @@ export default function About() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <ProfilePageJsonLd />
 
       <header className="page-header">
         <h1 className="page-title">About</h1>

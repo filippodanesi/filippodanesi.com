@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BreadcrumbJsonLd } from '../../components/JsonLd'
+import { BreadcrumbJsonLd, SoftwareSourceCodeJsonLd } from '../../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -42,6 +42,13 @@ export default function WebScraper() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <SoftwareSourceCodeJsonLd
+        name="Web Scraper"
+        description="Pulls clean text from any URL. Useful for competitor analysis."
+        slug="web-scraper"
+        codeRepository="https://github.com/filippodanesi/web-scraper"
+        programmingLanguage={['TypeScript']}
+      />
 
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>

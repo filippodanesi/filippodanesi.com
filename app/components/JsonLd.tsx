@@ -26,7 +26,16 @@ export function PersonJsonLd() {
     familyName: 'Danesi',
     url: siteUrl,
     mainEntityOfPage: `${siteUrl}/about`,
-    image: `${siteUrl}/api/og`,
+    // Hosted on GitHub rather than in /public: schema.org accepts any
+    // crawlable absolute URL, and this one stays in sync with the avatar.
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://avatars.githubusercontent.com/u/50838949',
+      contentUrl: 'https://avatars.githubusercontent.com/u/50838949',
+      width: 460,
+      height: 460,
+      caption: 'Filippo Danesi',
+    },
     description:
       'SEO and AI search manager working on organic search and LLM visibility for enterprise e-commerce across EMEA and APAC.',
     sameAs: [

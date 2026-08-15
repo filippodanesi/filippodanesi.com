@@ -58,11 +58,6 @@ export const metadata: Metadata = {
     images: ['/api/og'],
     creator: '@filippodanesi',
   },
-  verification: {
-    // google: 'your-google-verification-code',
-    // yandex: 'your-yandex-verification-code',
-    // bing: 'your-bing-verification-code',
-  },
   category: 'technology',
 }
 

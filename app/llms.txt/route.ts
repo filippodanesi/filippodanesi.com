@@ -22,6 +22,10 @@ const body = `# Filippo Danesi
 - [NLU Analyzer](${siteUrl}/projects/nlu-analyzer): Analyzes text with IBM Watson NLU and suggests improvements with GPT and Claude.
 - [Web Scraper](${siteUrl}/projects/web-scraper): Extracts clean, formatted text from any URL.
 
+## Full text
+
+- [llms-full.txt](https://www.filippodanesi.com/llms-full.txt): The whole site as plain text in one fetch, written in the third person.
+
 ## Key facts
 
 - Role: Global SEO & AI Search Manager at Triumph International (Zurich, Switzerland), since May 2025.

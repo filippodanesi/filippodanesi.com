@@ -46,7 +46,7 @@ const experiences = [
     company: 'Triumph International',
     location: 'Zurich, Switzerland',
     date: 'May 2025 — Present',
-    description: 'I run organic and AI search for Triumph across 15+ sites in EMEA and APAC. I built the tracker that tells us whether ChatGPT, Perplexity, Gemini and Claude actually mention us, and who they cite instead. I also own ASO for the Triumph app, which I took from pre-launch to publication on both stores, and the AI pipeline that writes product copy for 10,000+ SKUs.',
+    description: 'I run organic and AI search for Triumph across 15+ sites in EMEA and APAC. I built the tracker that tells us whether ChatGPT, Perplexity, Gemini and Claude mention us at all, and who they cite instead. ASO for the app is mine too, from pre-launch to publication on both stores. So is the pipeline that writes product copy for 10,000+ SKUs.',
   },
   {
     role: 'Product Owner — Verbalist',

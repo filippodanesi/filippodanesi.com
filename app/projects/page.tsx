@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { BreadcrumbJsonLd } from '../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -54,9 +55,16 @@ const projects = [
   },
 ]
 
+const breadcrumbItems = [
+  { name: 'Home', url: siteUrl },
+  { name: 'Projects', url: `${siteUrl}/projects` },
+]
+
 export default function Projects() {
   return (
     <>
+      <BreadcrumbJsonLd items={breadcrumbItems} />
+
       <header className="page-header">
         <h1 className="page-title">Projects</h1>
         <p className="page-description">Tools I built to automate parts of my SEO workflow.</p>

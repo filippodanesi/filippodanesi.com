@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { BreadcrumbJsonLd } from '../../components/JsonLd'
 
 const siteUrl = 'https://www.filippodanesi.com'
 
@@ -31,9 +32,17 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbItems = [
+  { name: 'Home', url: siteUrl },
+  { name: 'Projects', url: `${siteUrl}/projects` },
+  { name: 'NLU Analyzer', url: `${siteUrl}/projects/nlu-analyzer` },
+]
+
 export default function NLUAnalyzer() {
   return (
     <>
+      <BreadcrumbJsonLd items={breadcrumbItems} />
+
       <header className="page-header">
         <Link href="/projects" className="breadcrumb">← Projects</Link>
         <h1 className="page-title">NLU Analyzer</h1>

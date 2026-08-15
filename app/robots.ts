@@ -5,7 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        // /api/og generates the Open Graph cards, so it must stay crawlable
+        allow: ['/', '/api/og'],
         disallow: ['/api/', '/_next/'],
       },
     ],

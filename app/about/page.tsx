@@ -1,22 +1,48 @@
 import type { Metadata } from 'next'
 import { Download } from 'lucide-react'
+import { BreadcrumbJsonLd } from '../components/JsonLd'
+
+const siteUrl = 'https://www.filippodanesi.com'
+const description = 'SEO & AI Search Manager at Triumph International. 15+ sites across EMEA and APAC, an in-house LLM visibility tracker, and the tools behind both.'
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'About Filippo Danesi. SEO specialist working on organic search and AI search visibility for enterprise e-commerce.',
+  title: {
+    absolute: 'About Filippo Danesi ~ SEO & AI Search Manager',
+  },
+  description,
   alternates: {
-    canonical: 'https://www.filippodanesi.com/about',
+    canonical: `${siteUrl}/about`,
   },
   openGraph: {
-    title: 'About ~ Filippo Danesi',
-    description: 'About Filippo Danesi. SEO specialist working on organic search and AI search visibility for enterprise e-commerce.',
-    url: 'https://www.filippodanesi.com/about',
+    title: 'About Filippo Danesi ~ SEO & AI Search Manager',
+    description,
+    url: `${siteUrl}/about`,
+    type: 'profile',
+    images: [
+      {
+        url: '/api/og?title=About',
+        width: 1200,
+        height: 630,
+        alt: 'About Filippo Danesi ~ SEO & AI Search Manager',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Filippo Danesi ~ SEO & AI Search Manager',
+    description,
+    images: ['/api/og?title=About'],
   },
 }
 
+const breadcrumbItems = [
+  { name: 'Home', url: siteUrl },
+  { name: 'About', url: `${siteUrl}/about` },
+]
+
 const experiences = [
   {
-    role: 'SEO & AI Search Manager',
+    role: 'Global SEO & AI Search Manager',
     company: 'Triumph International',
     location: 'Zurich, Switzerland',
     date: 'May 2025 — Present',
@@ -108,6 +134,8 @@ const education = [
 export default function About() {
   return (
     <>
+      <BreadcrumbJsonLd items={breadcrumbItems} />
+
       <header className="page-header">
         <h1 className="page-title">About</h1>
       </header>

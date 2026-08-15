@@ -4,17 +4,19 @@ export function PersonJsonLd() {
     '@type': 'Person',
     name: 'Filippo Danesi',
     url: 'https://www.filippodanesi.com',
-    image: 'https://www.filippodanesi.com/og-image.png',
+    image: 'https://www.filippodanesi.com/api/og',
     sameAs: [
-      'https://linkedin.com/in/filippodanesi',
+      'https://www.linkedin.com/in/filippodanesi',
       'https://github.com/filippodanesi',
+      'https://x.com/filippodanesi',
       'https://www.serp-secrets.com',
     ],
-    jobTitle: 'SEO & AI Search Manager',
+    jobTitle: ['Global SEO & AI Search Manager', 'Product Owner'],
     worksFor: {
       '@type': 'Organization',
       name: 'Triumph International',
       url: 'https://en.wikipedia.org/wiki/Triumph_International',
+      sameAs: 'https://www.wikidata.org/wiki/Q671216',
     },
     alumniOf: [
       {

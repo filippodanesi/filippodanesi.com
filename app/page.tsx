@@ -13,7 +13,8 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <p className="page-description">I'm an SEO specialist focused on making brands visible on Google and AI search engines. I also build tools that automate the parts of SEO that don't scale manually.</p>
+        <h1>I run organic and AI search for global e-commerce brands.</h1>
+        <p className="page-description">Right now for Triumph, across 15+ sites in EMEA and APAC. I make brands visible on Google and inside AI search engines, and build the tools that automate the parts of SEO that don't scale manually.</p>
       </section>
 
       <Clock />
